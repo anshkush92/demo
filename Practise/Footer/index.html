@@ -1,3 +1,10 @@
+<!-- Theory: -->
+<!-- Error:  -->
+<!-- Reference:  -->
+<!-- Fix:  -->
+<!-- Todo:  -->
+<!-- Important: -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +14,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer for the Winter Project</title>
 
+    <!-- Theory: Adding the CSS file -->
+    <link rel="stylesheet" href="./styles/social-media-icons.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive-code.css">
+    <!-- Theory: Adding the font-awesome library -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+    <!-- Theory: Adding the app.js -->
+    <script src="./scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -18,19 +32,20 @@
 
         <footer>
 
-            <!-- Contains sign up to newsletter -->
+            <!-- Important: Contains sign up to newsletter -->
             <section>
                 <h3>KEBER</h3>
-                <!-- Should contain images about different social media -->
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>LinkedIn</li>
+
+                <!--Todo: Should contain images about different social media -->
+                <ul class="social-media-icons-container">
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </section>
 
-            <!-- Contains the services of the website -->
+            <!-- Important: Contains the services of the website -->
             <section>
                 <h3>Services</h3>
                 <ul>
@@ -39,7 +54,7 @@
                 </ul>
             </section>
 
-            <!-- Contains the Roles section (Admin, Student, Verifier) -->
+            <!-- Important: Contains the Roles section (Admin, Student, Verifier) -->
             <section>
                 <h3>Roles</h3>
                 <ul>
@@ -49,7 +64,7 @@
                 </ul>
             </section>
 
-            <!-- Contains the informatio of how to use + about us -->
+            <!-- Important: Contains the informatio of how to use + about us -->
             <section>
                 <h3>Information</h3>
                 <ul>
@@ -58,25 +73,25 @@
                 </ul>
             </section>
 
-            <!-- Contains the form for the subscription -->
+            <!-- Important: Contains the form for the subscription -->
             <section>
                 <h3>Don't Miss Out</h3>
                 <p>Notified first for our products samples, coupons and latest news</p>
                 <form action="">
-                    <label for="user-email">Email</label>
-                    <input type="email" name="useremail" id="user-email">
-
-                    <button type="submit" id="email-button">Subscribe</button>
+                    <div class="footer-newsletter-form">
+                        <input type="email" name="useremail" id="user-email" placeholder="Enter Email Address">
+                        <button type="submit" id="submit-button">Submit</button>
+                    </div>
                 </form>
             </section>
 
         </footer>
 
         <hr>
-
+        <!-- Important: Container which stores the copyright and back to top section -->
         <div class="container">
             <div>© 2022 KEBER</div>
-            <div>Back to top &#94;</div>
+            <button>Back to top &#94;</button>
         </div>
 
     </div>
