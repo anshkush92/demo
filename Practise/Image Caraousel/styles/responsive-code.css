@@ -1,0 +1,34 @@
+/* Todo: Add the media queries section for the responsive code for the website */
+/* Important: Media queries section */
+
+@media (max-width: 910px) {
+  .slideshow-image-content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slideshow-content {
+    max-width: 500px;
+  }
+
+  .slideshow-buttons #previous-button, #next-button{
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .slideshow-images img{
+    width: 100%;
+  }
+  
+  .slideshow-content{
+    width: 100%;
+  }
+
+  .slideshow-buttons #previous-button, #next-button{
+    font-size: 1.25rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
