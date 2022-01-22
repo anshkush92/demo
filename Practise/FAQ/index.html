@@ -1,0 +1,90 @@
+<!-- References (Add FAQ Accordion) => https://www.w3schools.com/howto/howto_js_accordion.asp -->
+<!-- References (Timing Events) => https://www.w3schools.com/js/js_timing.asp -->
+<!-- References (Animation on Display property) => https://www.impressivewebs.com/animate-display-block-none/ -->
+<!-- Todo => https://codepen.io/collection/gYwRYR -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+
+    <!-- Theory: Linking the CSS, JS files -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Important: Don't forget to use "defer" when using <script> in <head> -->
+    <script src="./scripts/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Todo: Create a FAQ based on => https://dribbble.com/shots/14910012-Daily-UI-FAQ -->
+    <div class="faq-container">
+        <h1>FAQs</h1>
+
+        <!-- Theory: Unordered questions for the FAQs -->
+        <ul>
+            <li>
+
+                <div class="question-button-toggle">
+                    <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quam ?</p>
+                    <button class="button">+</button>
+                </div>
+
+                <div class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolor officia
+                    quidem a dolorem tempora nam corporis blanditiis hic deserunt quis enim architecto eligendi repellat
+                    error, omnis iste ut, id recusandae nemo, ea quod earum.</div>
+            </li>
+
+            <li>
+
+                <div class="question-button-toggle">
+                    <p class="question">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis voluptatibus debitis
+                        expedita libero architecto. ?
+                    </p>
+                    <button class="button">+</button>
+                </div>
+
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate molestiae beatae
+                    asperiores quis velit optio necessitatibus itaque, voluptatibus ipsa porro ducimus commodi magni
+                    aperiam aut.</div>
+            </li>
+
+            <li>
+
+                <div class="question-button-toggle">
+                    <p class="question">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident eos quibusdam
+                        dicta vel magnam ex impedit molestias recusandae vero ea, quas cupiditate quisquam veniam ?
+                    </p>
+
+                    <button class="button">+</button>
+                </div>
+
+                <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur
+                    asperiores eum tempore ipsam explicabo.</div>
+            </li>
+
+            <li>
+
+                <div class="question-button-toggle">
+                    <p class="question">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, hic molestias! In possimus
+                        provident ad consectetur a error tempora quam labore ullam quibusdam recusandae, dolores quia,
+                        magni officia laudantium tenetur necessitatibus fugit, ab at impedit?
+                    </p>
+                    <button class="button">+</button>
+                </div>
+
+                <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolores.</div>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
