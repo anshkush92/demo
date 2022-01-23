@@ -15,6 +15,8 @@ for (let plus_button of plus_button_array) {
 // Theory: Function for toggling the FAQs
 function toggle_display_answer(event) {
   // Fix: For checking whether selected element is correct or not
+  console.log(event.target.parentElement);
+  console.dir(event.target.parentElement);
 
   let toggle_answer = event.target.parentElement.nextElementSibling;
   let button = event.target;
