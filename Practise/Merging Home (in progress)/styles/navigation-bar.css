@@ -3,6 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
     font-size: 20px;
+    background-color: rgb(251, 251, 255);
+    font-family: "Poppins", sans-serif;
 }
 
 /* Important: Contains the styling for the navigation-bars containers which contains side-navigation bar and the normal navigation bar */
@@ -19,8 +21,9 @@
 .navigation-bar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: bisque;
+    /* background-color: bisque; */
     padding: 10px 25px;
     border-radius: 4px;
     margin: 20px 0px;
@@ -45,7 +48,28 @@ li, .logo, .contact-us{
     cursor: pointer;
 }
 
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo:hover{
+    transform: scale(1.03);
+}
+
+.contact-us{
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #604FCD;
+}
+
+.contact-us:hover{
+    background-color: #3B2A93;
+    transform: scale(1.05);
+}
+
 /* Theory: Using the transform property on the <li> for some basic animation */
-.navigation-bar ul li:hover, .contact-us:hover, .logo:hover{
+.navigation-bar ul li:hover{
     transform: scale(1.1);
 }
