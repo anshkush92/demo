@@ -18,7 +18,7 @@ aside {
   justify-content: flex-start;
   align-items: center;
   /* position: fixed; */
-  background-color: #f6e0f7;
+  background-color: rgba(225,235,255,1);
   transition: transform 0.5s ease;
 
   display: none;
@@ -33,12 +33,14 @@ aside {
   padding: 15px 10px;
   /* margin-top: 25px; */
   text-align: center;
-  background-color: #ee9ef1;
+  background-color: rgba(225,235,255,1);
+  color: #130b43;
   border-bottom: 1px solid black;
 }
 
 .side-navigation-bar-content ul {
   width: 100%;
+  background-color: rgba(225,235,255,1);
 }
 
 /* Theory: For the font-awesome icons for the side-nvaigation bar */
@@ -47,6 +49,7 @@ aside {
   margin: 5px 10px;
   text-align: center;
   font-size: 30px;
+  background-color: rgba(225,235,255,1);
 }
 
 /* Theory: For styling the content associated with the font-awesome icons */
@@ -58,11 +61,14 @@ aside {
   border-bottom: 1px solid black;
   /* margin: 5px 0px; */
   padding: 5px 0px;
+  background-color: rgba(225,235,255,1);
 }
 
 /* Theory: For giving a left-border hover effect (inspired from essence) */
 .side-navigation-bar-content li:hover {
-  border-left: 5px solid brown;
+  border-left: 5px solid rgba(46,87,232,1);
+  color: rgba(46,87,232,1);
+  background-color: rgba(225,235,255,0.7);
 }
 
 /* Error ------------------------------------------------------------------------------------------------------------------------------------------------------------ */

@@ -10,7 +10,7 @@
   /* padding: 2.4px; */
   width: 50px;
   height: 40px;
-  background-color: #d7bfe1;
+  background-color: #E1EBFF;
   border-radius: 4px;
   cursor: pointer;
   display: none;
@@ -20,7 +20,7 @@
 .side-navigation-bar span {
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: #2E57E8;
   margin: 4px auto;
   transition: all 0.5s ease;
 }
