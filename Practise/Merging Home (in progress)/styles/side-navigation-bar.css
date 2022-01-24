@@ -1,0 +1,41 @@
+/* Important: This is for the hamburger-cross icon animation */
+
+/* Theory: To make the <span> element in 3 bars  */
+.side-navigation-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  /* padding: 2.4px; */
+  width: 50px;
+  height: 40px;
+  background-color: #d7bfe1;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Theory: To give each <span> element a fixed width and height for better looking hamburger icons */
+.side-navigation-bar span {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin: 4px auto;
+  transition: all 0.5s ease;
+}
+
+/* Theory: For the conversion of hamburger icon into the cross icon */
+.side-navigation-bar span.bar1 {
+  transform: rotate(45deg) translate(4.5px, 2px);
+}
+
+.side-navigation-bar span.bar2 {
+  display: none;
+}
+
+.side-navigation-bar span.bar3 {
+  transform: rotate(-45deg) translate(4px, -3px);
+}
+
+
