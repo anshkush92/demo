@@ -1,0 +1,101 @@
+#demo {
+  max-width: 500px;
+  margin: auto;
+}
+footer {
+  display: grid;
+}
+.heading {
+  margin-left: 5%;
+}
+
+label,
+button {
+  display: block;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #f6d860;
+}
+label {
+  font-weight: bolder;
+}
+textarea {
+  border-radius: 8px;
+
+  width: 90%;
+  height: 80px;
+}
+form {
+  text-align: center;
+}
+
+input {
+  border-radius: 8px;
+  height: 35px;
+  width: 90%;
+}
+label {
+  text-align: left;
+  margin-left: 5%;
+}
+
+button {
+  font-size: 100%;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+}
+#main {
+  background-color: #95cd41;
+  display: grid;
+}
+
+#main,
+#webview {
+  height: 100vh;
+  width: 100%;
+}
+body {
+  margin: 0%;
+  font-size: 22px;
+  display: flex;
+}
+
+#webview {
+  background-color: #fffda2;
+  display: none;
+}
+
+#parent {
+  position: relative;
+}
+#circle {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: #baffb4;
+  opacity: 0.8;
+  border-radius: 100%;
+  right: 90px;
+  bottom: 80px;
+}
+
+#quarter {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: #ff6363;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 100%;
+}
+
+@media (min-width: 660px) {
+  #webview {
+    padding-left: 3%;
+    display: grid;
+    width: 70%;
+  }
+}
