@@ -12,6 +12,8 @@
 	border-bottom: 2px black solid;
 }
 
+
+
 body{
 	margin:  0;
 	padding: 10px;
@@ -86,16 +88,3 @@ input[type="submit"]:hover{
 	transition: .5s;
 }
 
-.signup-link{
-	font-size: 15px;
-}
-
-.signup-link a{
-	text-decoration: none;
-	color: #2691d9;
-}
-
-.signup-link a:hover{
-	text-decoration: underline;
-
-}
