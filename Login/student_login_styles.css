@@ -1,9 +1,18 @@
-.student{
+.student a{
 	text-decoration: none;
+	color: #0C0C0C;
+
 }
-.student:hover{
-	transition: .5s;
+
+.student a:hover{
+	text-decoration: underline;
 }
+
+.student{
+	border-bottom: 2px black solid;
+}
+
+
 
 body{
 	margin:  0;
