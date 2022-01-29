@@ -2,6 +2,10 @@ aside {
   display: flex;
   transform: translateX(-200px);
   transition: transform 0.5s ease;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
 }
 
 .side-nav-bar-animation {
@@ -14,7 +18,7 @@ aside {
   flex-direction: column;
   width: 200px;
   max-width: 200px;
-  height: 100vh;
+  height: 1000vh;
   justify-content: flex-start;
   align-items: center;
   /* position: fixed; */

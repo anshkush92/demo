@@ -10,7 +10,7 @@
   /* padding: 2.4px; */
   width: 50px;
   height: 40px;
-  background-color: #E1EBFF;
+  background-color: #e1ebff;
   border-radius: 4px;
   cursor: pointer;
   display: none;
@@ -20,10 +20,12 @@
 .side-navigation-bar span {
   width: 30px;
   height: 2px;
-  background-color: #2E57E8;
+  background-color: #2e57e8;
   margin: 4px auto;
   transition: all 0.5s ease;
 }
+
+/* Error ========================================== Animating Hamburger into Cross Icon ============================================================================= */
 
 /* Theory: For the conversion of hamburger icon into the cross icon */
 .side-navigation-bar span.bar1 {
@@ -38,4 +40,11 @@
   transform: rotate(-45deg) translate(4px, -3px);
 }
 
+/* Error ========================================== To move the <body> content to the right when toggled hamburger icon ============================================ */
+.move-content-when-toggled-hamburger {
+  transform: translateX(200px);
+}
 
+.animation {
+  transition: all 0.5s ease;
+}

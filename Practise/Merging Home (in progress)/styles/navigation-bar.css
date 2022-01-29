@@ -8,6 +8,12 @@
     color: #130b43;
 }
 
+p{
+    width: 85%;
+    margin: auto;
+    padding: 8px 12px;
+}
+
 /* Important: Contains the styling for the navigation-bars containers which contains side-navigation bar and the normal navigation bar */
 .navigation-bars-container{
     display: flex;
@@ -24,10 +30,34 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* background-color: bisque; */
+
+    /* Fix: Temporary color for visualizing scrolling better */
+    background-color: rgb(248, 167, 248);
     padding: 10px 25px;
     border-radius: 4px;
     margin: 20px 0px;
+
+    /* Fix: Temporary just for testing Scrolling feature */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px 0px 20px 0px;
+    
+    /* Fix: Just for adding the scrolling animation */
+    transition: transform 0.6s ease;
+}
+
+/* Fix: Temporary class to be added to .navigation-bar to give scorlling effect */
+.bring-up-down-toggle{
+    transform: translateY(-70px);
+    /* transform: translate(0px); */
+}
+
+/* Fix: Temporary class to be added for scrolling up animation testing */
+/* Todo: Remove it after the successful testing of the animation */
+.content-for-scroll-testing{
+    /* transform: translateY(70px); */
+    margin: 70px 0px;
 }
 
 /* Theory: Making the <ul> items as the flex items for the manipulation in 1D only */

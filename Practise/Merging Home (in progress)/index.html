@@ -1,4 +1,6 @@
 <!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Side Navigation Bar</title>
+    <title>How To Get Navigation Bar on Scrolling Up</title>
 
     <!-- Important: Linking the font-awesome kit for importing the icons -->
     <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
@@ -24,6 +26,7 @@
 
     <!-- Important: As we are using script in <head> so it is important to makke it defer -->
     <script src="./scripts/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <script src="./scripts/hide-show-horizontal-navigation-bar.js" defer></script>
 
 </head>
 
@@ -42,6 +45,11 @@
             </ul>
         </div>
 
+    </aside>
+
+
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
         <!-- Theory: For making the hamburger-cross animated icon -->
         <nav class="side-navigation-bar">
             <span></span>
@@ -49,26 +57,87 @@
             <span></span>
         </nav>
 
-    </aside>
+        <!-- Theory: For making the whole navigation bar -->
+        <div class="navigation-bars-container">
 
-    <!-- Theory: For making the whole navigation bar -->
-    <div class="navigation-bars-container">
+            <!-- Theory: For making the top navigation bar -->
+            <nav class="navigation-bar">
+                <div class="logo">KEBER</div>
 
-        <!-- Theory: For making the top navigation bar -->
-        <nav class="navigation-bar">
-            <div class="logo">KEBER</div>
+                <div class="nav-content">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Roles</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
 
-            <div class="nav-content">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Roles</li>
-                    <li>FAQs</li>
-                </ul>
-            </div>
+                <div class="contact-us">Contact US</div>
+            </nav>
+        </div>
 
-            <div class="contact-us">Contact US</div>
-        </nav>
+        <!-- Theory: Dummy content to visualize the Navbar on scrolling up -->
+        <div class="content-for-scroll-testing">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus pariatur ab! Consequuntur rerum
+                doloribus voluptatem laudantium quae suscipit commodi reprehenderit dolores excepturi! Commodi ratione
+                consequuntur, sunt velit corporis ex assumenda illo doloribus quis incidunt totam porro necessitatibus
+                nobis
+                dolores, repellendus quo. Voluptas perferendis repellendus dolor quos quasi aliquam aliquid, totam ea
+                quas
+                eos? Nisi ducimus, optio ut laudantium quam aut aspernatur deleniti cumque eligendi consequuntur ipsum,
+                officiis beatae, natus voluptates enim asperiores? Neque maxime odio, magni mollitia delectus quis iste
+                incidunt corrupti aperiam sequi tempore officia quaerat dolore quisquam aspernatur nisi. Quas quae eum
+                soluta totam rem placeat inventore?</p>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sed ullam perferendis quas eos,
+                magnam
+                itaque laboriosam eveniet nemo voluptas!</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo vel fuga ratione dolorem, accusamus, ut,
+                cumque doloremque tempora nihil illo tempore placeat cupiditate amet quod et explicabo iste. Possimus,
+                doloribus nesciunt laudantium praesentium dolores nam ab necessitatibus architecto optio aliquid
+                eligendi
+                iste sed debitis exercitationem dignissimos est cupiditate omnis maiores explicabo eveniet esse
+                pariatur.
+                Corporis officia qui a quidem ducimus maiores quos, explicabo pariatur suscipit tempora harum aperiam
+                perferendis deserunt error iure illo quas doloribus reprehenderit reiciendis sunt ex quae temporibus.
+                Doloremque repudiandae adipisci temporibus culpa. Reiciendis expedita officia, architecto quibusdam,
+                quisquam veritatis quod quidem quas a tenetur eos eveniet repellat quos voluptatum ullam veniam
+                excepturi
+                placeat, commodi voluptatibus alias saepe! Ducimus officia quisquam delectus necessitatibus maxime,
+                animi
+                impedit ea enim nobis sapiente, debitis, odio ab non molestiae provident nesciunt asperiores error
+                architecto vel aliquid obcaecati? Repellendus asperiores sequi sint inventore excepturi odio animi.
+                Molestiae ullam ipsum asperiores eligendi.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit nisi totam qui soluta consequatur
+                sint, possimus velit perferendis dicta iure iusto cum quaerat culpa et? Possimus perferendis delectus
+                harum
+                adipisci velit perspiciatis esse repellat, molestias nobis hic, deleniti magni vero alias corporis atque
+                ipsa! Quibusdam quam officiis cum! Sunt.</p>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, quidem laboriosam autem reiciendis
+                dolorem, dignissimos recusandae consequatur dolorum eius eos nihil cum repudiandae ipsa eum doloribus
+                quos.
+                Ab quasi sit sequi debitis aspernatur iusto. Impedit amet velit illum vitae fugit, cum harum ipsam?
+                Cumque
+                qui quod, quaerat in ullam porro error ipsa ipsam cum corporis, aperiam incidunt quasi mollitia delectus
+                laudantium nemo accusamus vitae sunt aspernatur libero? Quia odit, perspiciatis nemo eum laudantium
+                animi
+                repellendus.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, placeat ipsum aperiam quod
+                praesentium quasi necessitatibus hic facilis ex architecto et asperiores repellendus sunt quos mollitia
+                quia, odio similique harum fuga voluptatem. Iusto numquam fugit doloremque consequuntur voluptatibus
+                quasi, est vero velit beatae soluta dicta placeat omnis natus incidunt dolorem.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias repellat ipsam cumque aut
+                magnam, eos sint nam officiis doloribus consectetur sit itaque sunt quia numquam sed iste, temporibus
+                totam voluptate. Maxime deserunt magni nam excepturi laboriosam tempore quasi. Est consequatur
+                dignissimos illo! Nemo velit quibusdam beatae modi blanditiis in!</p>
+            <hr>
+        </div>
     </div>
 
 </body>
