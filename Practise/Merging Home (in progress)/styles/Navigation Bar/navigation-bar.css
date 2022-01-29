@@ -2,10 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 20px;
-    background-color: rgb(251, 251, 255);
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     color: #130b43;
+    background-color: rgb(251, 251, 255);
+}
+
+body{
+    background-color: rgb(251, 251, 255);
 }
 
 p{

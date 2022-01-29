@@ -5,7 +5,7 @@ const content_for_scroll_testing = document.querySelector(
 );
 
 // Theory: To check whether the window has been scrolled or not
-document.addEventListener("scroll", display_scroll);
+window.addEventListener("scroll", display_scroll);
 let y_current_position = 0,
   y_start_position = 80;
 
@@ -25,9 +25,9 @@ function display_scroll(event) {
   }
   console.log(
     "Starting Position : " + y_start_position,
-    "\nCurrent Position: " +
+    "\tCurrent Position: " +
       y_current_position +
-      "\nNew Positon : " +
+      "\tNew Positon : " +
       y_new_position
   );
   y_current_position = y_new_position;
