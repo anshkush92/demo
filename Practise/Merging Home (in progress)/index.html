@@ -1,0 +1,257 @@
+<!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Get Navigation Bar on Scrolling Up</title>
+
+    <!-- Important: Linking the font-awesome kit for importing the icons -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+
+    <!-- Important: Importaing the fonts from the Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Test: Linking the ScrollMagic CDN File for using the Scroll Magic Plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
+
+    <!-- Theory: Linking the CSS files for the Split Screen Parallax -->
+    <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Footer -->
+    <link rel="stylesheet" href="./styles/Footer/styles.css">
+    <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
+    <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+
+    <!-- Theory: Linking the CSS files for navigation bar -->
+    <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar-content.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/backdrop-filter.css">
+
+    <!-- Important: Using the JS file for knowing the current page -->
+    <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+
+    <!-- Important: Using the JS file for the Split screene Parallax -->
+    <script src="./scripts/Split Screen Parallax/app.js" defer></script>
+
+    <!-- Important: As we are using script in <head> so it is important to makke it defer -->
+    <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+</head>
+
+<body>
+
+    <div id="backdrop-filter"></div>
+
+    <!-- Important: 1st part Navigation Bar (Vertical (Side Navigation bar)) -->
+    <!-- Theory: For making the side-navigation-bar overlay -->
+    <aside>
+        <div class="side-navigation-bar-content">
+            <h2>KEBER</h2>
+            <ul>
+                <li class="icon-content"><i class="fas fa-home"></i> Home </li>
+                <li class="icon-content"><i class="fas fa-user"></i> About Us</li>
+                <li class="icon-content"><i class="fas fa-users-cog"></i> Roles</li>
+                <li class="icon-content"><i class="fas fa-question"></i> FAQs</li>
+                <li class="icon-content"><i class="fas fa-phone-alt"></i> Contact Us</li>
+            </ul>
+        </div>
+
+    </aside>
+
+
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
+        <!-- Theory: For making the hamburger-cross animated icon -->
+        <nav class="side-navigation-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+        <!-- Important: 2nd Part Horizontal Navigation Bar -->
+        <!-- Theory: For making the whole navigation bar -->
+        <div class="navigation-bars-container">
+
+            <!-- Theory: For making the top navigation bar -->
+            <nav class="navigation-bar">
+                <div class="logo">KEBER</div>
+
+                <div class="nav-content">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Roles</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+                <div class="contact-us">Contact US</div>
+            </nav>
+        </div>
+
+        <!-- Error --------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- Important: 3rd Section (Split Screen Parallax Scrolling UP) -->
+        <!-- Test: 3rd Section Split Screen Parallax Scrolling Up -->
+
+        <section class="customers">
+
+            <div class="customers-title">
+                <h2>Are you one of them ?</h2>
+            </div>
+
+            <div class="customers-test">
+
+                <!-- Debug: Commenting out just for the testing purposes for the mobile view -->
+                <div class="tests">
+
+                    <div class="image-container">
+                        <img src="./images/undraw_result_re_uj08.svg" alt="Result displayed in public">
+                    </div>
+
+
+                    <div class="content-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint commodi quibusdam
+                            recusandae
+                            beatae nostrum, voluptates accusantium facilis est delectus, facere odit vel nemo ratione
+                            veniam. Vel expedita nihil nemo suscipit necessitatibus. Vitae aliquid doloribus officiis
+                            soluta, nihil sequi perspiciatis animi. Illo, veritatis cumque temporibus quo nobis vel
+                            voluptas
+                            tempore!</p>
+                    </div>
+
+                </div>
+
+                <div class="tests">
+
+                    <div class="image-container">
+                        <img src="./images/undraw_public_discussion_re_w9up.svg" alt="Result discussion in public">
+                    </div>
+
+
+                    <div class="content-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi, aspernatur maxime id
+                            minus
+                            quae eveniet consectetur voluptates, beatae animi, atque nulla harum inventore quis ex
+                            itaque
+                            tempore? Cupiditate veritatis itaque sit officia dignissimos? Neque earum libero aut
+                            corrupti
+                            sequi nesciunt perspiciatis atque, aliquid, molestias aspernatur ea voluptatibus voluptatum
+                            assumenda.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="tests">
+
+                    <div class="image-container">
+                        <img src="./images/undraw_authentication_re_svpt.svg" alt="Authentication">
+                    </div>
+
+
+                    <div class="content-container">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni autem obcaecati,
+                            fugit iste, praesentium voluptas explicabo error, dolor laudantium fugiat facere totam iure
+                            numquam. Hic, tempora adipisci quia qui ea ut voluptate voluptates. Vel neque autem voluptas
+                            harum non beatae accusamus! Commodi impedit voluptate recusandae enim perspiciatis soluta
+                            sapiente!</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Error --------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- Testing: Commenting out for testing purpose for mobile view -->
+        <!-- Important: 4th part Footer (for now) -->
+        <div class="footer-container">
+            <h2>Free trial of 1 month</h2>
+
+            <footer>
+
+                <!-- Important: Contains sign up to newsletter -->
+                <section>
+                    <h3>KEBER</h3>
+
+                    <!--Todo: Should contain images about different social media -->
+                    <ul class="social-media-icons-container">
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the services of the website -->
+                <section>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Privacy of Information</li>
+                        <li>Marks Integrity</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the Roles section (Admin, Student, Verifier) -->
+                <section>
+                    <h3>Roles</h3>
+                    <ul>
+                        <li>Admin</li>
+                        <li>Students</li>
+                        <li>Verifier</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the informatio of how to use + about us -->
+                <section>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>How to use</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the form for the subscription -->
+                <section>
+                    <h3>Don't Miss Out</h3>
+                    <p>Notified first for our products samples, coupons and latest news</p>
+                    <form action="">
+                        <div class="footer-newsletter-form">
+                            <input type="email" name="useremail" id="user-email" placeholder="Enter Email Address">
+                            <button type="submit" id="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+
+            </footer>
+
+            <!-- Important: Container which stores the copyright and back to top section -->
+            <div class="container">
+                <div>© 2022 KEBER</div>
+                <button> <a href="#">Back to top &#94;</a> </button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

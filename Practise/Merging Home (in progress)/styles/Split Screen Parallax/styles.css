@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* max-width: 100%; */
+  /* overflow-x: hidden; */
+}
+
+.customers {
+  margin: 80px auto 20px auto;
+  width: 95%;
+  /* padding: 10px 0px; */
+  /* margin: auto; */
+  display: flex;
+  height: auto;
+  /* background-color: aquamarine; */
+  /* border: 2px solid black; */
+}
+
+.customers-title {
+  width: 35%;
+  /* padding: 2px; */
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto !important; */
+}
+
+.customers-title h2 {
+  font-size: 35px;
+}
+
+.customers-test {
+  width: 65%;
+  padding: 2px 0px;
+  /* border-left: 2px solid black; */
+}
+
+.customers-test div.tests:nth-child(1) {
+  /* background-color: rgb(228, 150, 150); */
+  /* border-bottom: 2px solid black; */
+  /* border-left: 1px solid black; */
+}
+
+.customers-test div.tests:nth-child(2) {
+  /* background-color: rgb(228, 203, 150); */
+  flex-direction: row-reverse;
+  /* border-bottom: 2px solid black; */
+  /* border-left: 1px solid black; */
+  margin: 20px 0px;
+}
+
+.customers-test div.tests:nth-child(3) {
+  font-size: 16px;
+}
+
+.tests {
+  height: auto;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Test: Commenting out for testing purpose for mobile view */
+.tests .image-container {
+  width: 40%;
+}
+
+.tests .content-container {
+  width: 60%;
+}
+
+.tests div p {
+  width: 100%;
+}
+
+.customers-test .tests img {
+  width: 100%;
+  max-height: 350px;
+}
+
+/* Error -------------------------------------------------------- Media Queries Section ------------------------------------------------------------------------- */
+/* Theory : Tree */
+/* Customers */
+/* Customers-title | Customers-test */
+/* h2 | tests */
+/* | image-container,  content - container */
+
+@media (max-width: 768px) {
+  .customers {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+
+  .customers-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .customers-title h2 {
+    font-size: 2rem;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .customers-test div.tests:nth-child(2) {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .customers-title {
+    width: 100%;
+  }
+
+  .customers-test {
+    width: 100%;
+  }
+
+  .tests {
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  .tests .image-container {
+    width: 100%;
+  }
+
+  .tests .content-container {
+    width: 100%;
+  }
+
+  .tests .content-container p {
+    width: 100%;
+    padding: 0px;
+  }
+}

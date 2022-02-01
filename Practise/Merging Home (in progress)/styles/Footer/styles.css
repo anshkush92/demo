@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* html {
+  /* Theory: CSS Varialbes for storing colors */
+  /* --bg-color: #ebbe97;
+  --form-bg-color: #010001;
+  --button-border: #fffffe;
+  --heading-section-color: #f2f3f3;
+  --list-items-color: #f0f1ec; */
+/* } */
+
+/* body {
+  background-color: var(--form-bg-color);
+  color: var(--list-items-color);
+  /* overflow: hidden; */
+/* } */ 
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: footer-container (<div> that contains footer) properties */
+.footer-container {
+  width: 100%;
+  padding: 25px 0px;
+  max-width: 100%;
+  margin: 20px auto 0px auto;
+  position: relative;
+  background-color: #130B43;
+  color: #c8d5ef;
+}
+
+.footer-container h2 {
+  text-align: center;
+  padding: 8px 2.5%;
+  font-size: 24px;
+  color: #fafaff;
+  font-weight: bold;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: Contains the styling for the <footer> element like the <heading> and its items*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: 15px auto 15px auto; */
+  padding: 15px 2.5%;
+  background-color: #130B43;
+  color: #c8d5ef;
+  overflow: visible !important;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.social-media-icons-container{
+  display: flex;
+  margin: 3px -55px;
+  background-color: #130B43;
+}
+
+/* Todo: Styling for the heading of the <section> */
+footer h3 {
+  display: inline-block;
+  margin: 5px;
+  /* color: var(--heading-section-color); */
+  font-size: 20px;
+  color: #fafaff;
+  font-weight: 600;
+}
+
+footer p {
+  width: 100%;
+  font-size: 16px;
+  /* margin: 5px; */
+  padding: 5px;
+}
+
+.footer-newsletter-form{
+  display: flex;
+}
+
+.footer-newsletter-form #user-email{
+  width: 80%;
+  margin: 3px 0px 15px 5px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #271b72;
+  border: 0px;
+  color: #fafaff;
+}
+
+.footer-newsletter-form #user-email:focus{
+  background-color: #5042ad;
+  border: 0px;
+}
+
+::placeholder{
+  color: #9d94da;
+  opacity: 0.7;
+}
+
+.footer-newsletter-form #submit-button{
+  width: 25%;
+  margin: 3px 5px 15px 0px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #1FA378;
+  color: #fafaff;
+  border: 0px;
+  /* color: white; */
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color: #c8d5ef;
+  font-weight: 600;
+  border: 0px;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: Styling for the part that is below the <footer> our copyright section*/
+.container {
+  display: flex;
+  padding: 8px 2.5%;
+  justify-content: space-evenly;
+}
+
+.container button{
+  background-color: transparent;
+  /* color: white; */
+  border: 0px;
+  cursor: pointer;
+}

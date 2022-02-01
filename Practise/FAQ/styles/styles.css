@@ -1,0 +1,107 @@
+/* Theory: Properties applied to all the HTML elements */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Theory: Properties to be applied to the whole faq-container (<ul> + <h1>) */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-faq-container-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10%;
+  padding: 10px 20px;
+  gap: 5px;
+  border-radius: 8px;
+  background-color: aliceblue;
+}
+
+.svg{
+  width: 50%;
+  height: 100%;
+}
+
+.content{
+  position: static;
+}
+
+.svg-faq-container-content div{
+  width: 50%;
+  height: 100%;
+}
+
+.svg-faq-container-content img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Theory: Properteis to be applied to the <ul> */
+.faq-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin: 10px 15%; */
+}
+
+/* Theory: Properties to be applied to the <li> items */
+.faq-container li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid black;
+  width: 100%;
+  margin: 10px 0px;
+  list-style: none;
+  /* max-width: 80%; */
+  padding: 8px 15px;
+}
+
+/* Theory: To the <div> that contains (question + toggle) */
+.faq-container .question-button-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Theory: Properties to be applied to the <button> of the faq-container */
+.faq-container .button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0px;
+}
+
+/* Theory: Properties to be applied to the <div> which contains question answer */
+.faq-container .answer {
+  width: 100%;
+  display: none;
+  /* margin: 10px 0px 5px 0px; */
+  opacity: 0;
+}
+
+@keyframes answer_opacity_from_0_to_1{
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
+@keyframes answer_opacity_from_1_to_0{
+  0% {opacity: 1;}
+  25% {opacity: 0.75;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.25;}
+  100% {opacity: 0;}
+}
