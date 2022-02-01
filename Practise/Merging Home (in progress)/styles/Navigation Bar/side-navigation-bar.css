@@ -42,7 +42,7 @@
 
 /* Error ========================================== To move the <body> content to the right when toggled hamburger icon ============================================ */
 .move-content-when-toggled-hamburger {
-  transform: translateX(200px);
+  transform: translateX(160px);
 }
 
 .animation {

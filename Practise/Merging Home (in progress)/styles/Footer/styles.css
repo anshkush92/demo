@@ -25,18 +25,21 @@
 
 /* Fix: footer-container (<div> that contains footer) properties */
 .footer-container {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  margin: 20px auto;
+  width: 100%;
+  padding: 25px 0px;
+  max-width: 100%;
+  margin: 20px auto 0px auto;
   position: relative;
-  /* background-color: brown; */
+  background-color: #130B43;
+  color: #c8d5ef;
 }
 
 .footer-container h2 {
   text-align: center;
-  padding: 8px 0px;
-  border-bottom: 2px solid black;
+  padding: 8px 2.5%;
   font-size: 24px;
+  color: #fafaff;
+  font-weight: bold;
 }
 
 /* Error ======================================================================================================================================================== */
@@ -45,7 +48,11 @@
 footer {
   display: flex;
   justify-content: space-evenly;
-  margin: 15px auto 15px auto;
+  /* margin: 15px auto 15px auto; */
+  padding: 15px 2.5%;
+  background-color: #130B43;
+  color: #c8d5ef;
+  overflow: visible !important;
 }
 
 footer ul li {
@@ -57,6 +64,7 @@ footer ul li {
 .social-media-icons-container{
   display: flex;
   margin: 3px -55px;
+  background-color: #130B43;
 }
 
 /* Todo: Styling for the heading of the <section> */
@@ -64,15 +72,16 @@ footer h3 {
   display: inline-block;
   margin: 5px;
   /* color: var(--heading-section-color); */
-  border-bottom: 1px solid black;
   font-size: 20px;
+  color: #fafaff;
+  font-weight: 600;
 }
 
 footer p {
   width: 100%;
   font-size: 16px;
-  margin: 5px;
-  padding: 0px;
+  /* margin: 5px; */
+  padding: 5px;
 }
 
 .footer-newsletter-form{
@@ -84,45 +93,52 @@ footer p {
   margin: 3px 0px 15px 5px;
   padding: 5px;
   font-size: 16px;
-  /* background-color: transparent; */
-  /* color: white; */
-  border: 1px solid black;
+  background-color: #271b72;
+  border: 0px;
+  color: #fafaff;
+}
+
+.footer-newsletter-form #user-email:focus{
+  background-color: #5042ad;
+  border: 0px;
 }
 
 ::placeholder{
-  color: black;
+  color: #9d94da;
   opacity: 0.7;
 }
 
 .footer-newsletter-form #submit-button{
-  width: 20%;
+  width: 25%;
   margin: 3px 5px 15px 0px;
   padding: 5px;
   font-size: 16px;
-  /* background-color: transparent; */
+  background-color: #1FA378;
+  color: #fafaff;
+  border: 0px;
   /* color: white; */
-  border: 1px solid black;
   cursor: pointer;
 }
 
 button a{
   text-decoration: none;
-  color: inherit;
+  color: #c8d5ef;
+  font-weight: 600;
+  border: 0px;
 }
 
 /* Error ======================================================================================================================================================== */
 
 /* Fix: Styling for the part that is below the <footer> our copyright section*/
 .container {
-  border-top: 2px solid black;
   display: flex;
-  padding: 8px 0px;
+  padding: 8px 2.5%;
   justify-content: space-evenly;
 }
 
 .container button{
-  /* background-color: transparent; */
+  background-color: transparent;
   /* color: white; */
-  border: 0px solid black;
+  border: 0px;
   cursor: pointer;
 }

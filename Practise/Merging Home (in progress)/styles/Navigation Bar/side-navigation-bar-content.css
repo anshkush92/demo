@@ -1,11 +1,13 @@
 aside {
   display: flex;
-  transform: translateX(-200px);
+  transform: translateX(-160px);
   transition: transform 0.5s ease;
   position: fixed;
   top: 0px;
   left: 0px;
   height: 100vh;
+  overflow-y: hidden;
+  z-index: 2;
 }
 
 .side-nav-bar-animation {
@@ -16,7 +18,7 @@ aside {
 .side-navigation-bar-content {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 160px;
   max-width: 200px;
   height: 1000vh;
   justify-content: flex-start;
@@ -89,5 +91,15 @@ aside {
 
   .side-navigation-bar-content {
     display: flex;
+    width: 160px;
+  }
+
+  .fas{
+    width: 33px;
+    font-size: 25px;
+  }
+
+  .side-navigation-bar-content .icon-content{
+    font-size: 18px;
   }
 }

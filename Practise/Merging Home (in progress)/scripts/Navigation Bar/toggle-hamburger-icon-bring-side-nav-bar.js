@@ -79,7 +79,7 @@ function toggle_hamburger_cross_icon(event) {
 
     // Todo: If else logic for the content width :) also for the backdrop filter
     if (content_moved_right_when_clicked_hamburger.classList.contains("move-content-when-toggled-hamburger")) {
-        content_moved_right_when_clicked_hamburger.style.width = `calc(${original_width}px - 200px)`;
+        content_moved_right_when_clicked_hamburger.style.width = `calc(${original_width}px - 160px)`;
         backdrop_filter.style.display = "block";
         console.log(content_moved_right_when_clicked_hamburger.style.width);
         console.log("Contains");

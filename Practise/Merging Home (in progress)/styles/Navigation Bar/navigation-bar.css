@@ -4,12 +4,12 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    color: #130b43;
-    background-color: rgb(251, 251, 255);
+    
 }
 
 body{
     background-color: rgb(251, 251, 255);
+    color: #130b43;
 }
 
 p{
@@ -25,6 +25,7 @@ p{
     align-items: center;
     width: 90%;
     margin: auto;
+    /* z-index: 1; */
     /* transform: translateX(100px); */
 }
 
@@ -36,7 +37,7 @@ p{
     width: 100%;
 
     /* Fix: Temporary color for visualizing scrolling better */
-    background-color: rgb(248, 167, 248);
+    background-color: #FFFFFF;
     padding: 10px 25px;
     border-radius: 4px;
     margin: 20px 0px;
@@ -49,6 +50,9 @@ p{
     
     /* Fix: Just for adding the scrolling animation */
     transition: transform 0.6s ease;
+
+    /* Test: Only for Split Screen Parallax Testing purpose */
+    z-index: 1;
 }
 
 /* Fix: Temporary class to be added to .navigation-bar to give scorlling effect */
@@ -67,6 +71,7 @@ p{
 /* Theory: Making the <ul> items as the flex items for the manipulation in 1D only */
 .navigation-bar ul{
     display: flex;
+    color: #5c5589;
 }
 
 /* Theory: Giving some property to the li items */
@@ -107,4 +112,15 @@ li, .logo, .contact-us{
 /* Theory: Using the transform property on the <li> for some basic animation */
 .navigation-bar ul li:hover{
     transform: scale(1.1);
+}
+
+/* Theory: For telling on which page we currently are  */
+.nav-content .current-page{
+    color: #130b43;
+    cursor: default;
+    font-weight: 600;
+}
+
+.nav-content .current-page:hover{
+    transform: scale(1);
 }
