@@ -7,7 +7,9 @@
 /* Error --------------------------------------------------- About Us Part Styling ----------------------------------------------------------------------------------- */
 
 #about-us {
-  margin: 30px auto;
+  height: auto;
+  margin: auto;
+  padding: 5% 0px;
 }
 
 .about-us-title {
@@ -18,26 +20,28 @@
 
 .about-us-title .main-title .what-is {
   text-align: center;
+  margin: auto;
 }
 
 .about-us-title-what {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .about-us-title-is {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 3px;
 }
 
 .about-us-title-keber p {
-  font-size: 50px;
-  margin-top: -15px;
+  font-size: 55px;
+  margin-top: -34px;
+  margin-left: -2px;
 }
 
 .about-us-title-question-mark p {
   font-size: 95px;
-  margin-top: -8px;
-  margin-left: -8px;
+  margin-top: -17px;
+  margin-left: -30px;
 }
 
 /* Error --------------------------------------------------- Horizontal Image Content Timeline --------------------------------------------------------------- */
@@ -48,6 +52,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 5%;
+  position: relative;
+  height: auto;
 }
 
 .image-content-container {
@@ -66,6 +72,19 @@
     width: 50%;
 } */
 
+.checkbox-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.checkbox-container label, input{
+  color: #130b43;
+  font-weight: bold;
+}
+
 .container-1,
 .container-2,
 .container-3 {
@@ -75,7 +94,7 @@
   flex-direction: column;
   padding: 0px 15%;
   gap: 10px;
-  height: 420px;
+  height: auto;
 }
 
 .container-2 {
@@ -99,9 +118,22 @@ img {
 
 .previous-arrow button,
 .next-arrow button{
-  font-size: 40px;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: transparent;
   border: 0px;
+  position: absolute;
+  top: 35%;
+}
+
+.previous-arrow button{
+  right: 90%;
+}
+
+.next-arrow button{
+  left: 90%;
 }
 
 .previous-arrow button:hover,
@@ -116,6 +148,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .circles{
@@ -140,111 +173,3 @@ img {
   background-color: black;
 }
 
-/* Error ------------------------------------------------------------------------- Media Queries for mobile view ------------------------------------------------- */
-
-@media (max-width: 768px) {
-  .container-1,
-  .container-2,
-  .container-3 {
-      height: 420px;
-      padding: 0px 10%;
-  }
-
-  img{
-      height: 200px;
-  }
-}
-
-/* Error ------------------------------------------------------------------------ Keyframes for the scale --------------------------------------------------------- */
-
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(0.9);
-  }
-
-  20% {
-    transform: scale(0.8);
-  }
-
-  30% {
-    transform: scale(0.7);
-  }
-
-  40% {
-    transform: scale(0.6);
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  60% {
-    transform: scale(0.4);
-  }
-
-  70% {
-    transform: scale(0.3);
-  }
-
-  80% {
-    transform: scale(0.2);
-  }
-
-  90% {
-    transform: scale(0.1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-
-  10% {
-    transform: scale(0.1);
-  }
-
-  20% {
-    transform: scale(0.2);
-  }
-
-  30% {
-    transform: scale(0.3);
-  }
-
-  40% {
-    transform: scale(0.4);
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  60% {
-    transform: scale(0.6);
-  }
-
-  70% {
-    transform: scale(0.7);
-  }
-
-  80% {
-    transform: scale(0.8);
-  }
-
-  90% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}

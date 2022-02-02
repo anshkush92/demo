@@ -26,7 +26,7 @@ function parallax_scrolling() {
         .addTo(controller);
 }
 
-if (html_element_width >= "768") {
+if (html_element_width > "768") {
     // console.log("Working");
     parallax_scrolling();
 }
