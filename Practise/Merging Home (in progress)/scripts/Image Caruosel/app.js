@@ -43,7 +43,7 @@ function direct_image_change(event) {
     current_image_content_container_shown = event.target.dataset.id - 1;
 
     list_of_images[current_image_content_container_shown].style.display = "flex";
-    list_of_images[current_image_content_container_shown].style.animation = "appear 0.9s ease";
+    list_of_images[current_image_content_container_shown].style.animation = "appear-scale 0.6s ease";
 }
 
 // Theory: Functino for checking which arrows was pressed using the contains 
@@ -80,7 +80,7 @@ function image_slideshow(event, number) {
     // console.log(current_image_content_container_shown);
 
     list_of_images[current_image_content_container_shown].style.display = "flex";
-    list_of_images[current_image_content_container_shown].style.animation = "appear 0.9s ease";
+    list_of_images[current_image_content_container_shown].style.animation = "appear-scale 0.6s ease";
     list_of_span_for_circles[current_image_content_container_shown].classList.add("current-image");
 }
 
