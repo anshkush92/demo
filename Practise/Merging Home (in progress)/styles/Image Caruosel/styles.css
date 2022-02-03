@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Error --------------------------------------------------- About Us Part Styling ----------------------------------------------------------------------------------- */
+
+#about-us {
+  height: auto;
+  margin: auto;
+  padding: 5% 0px;
+}
+
+.about-us-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-title .main-title .what-is {
+  text-align: center;
+  margin: auto;
+}
+
+.about-us-title-what {
+  font-size: 30px;
+}
+
+.about-us-title-is {
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.about-us-title-keber p {
+  font-size: 55px;
+  margin-top: -34px;
+  margin-left: -2px;
+}
+
+.about-us-title-question-mark p {
+  font-size: 95px;
+  margin-top: -17px;
+  margin-left: -30px;
+}
+
+/* Error --------------------------------------------------- Horizontal Image Content Timeline --------------------------------------------------------------- */
+
+.arrow-image-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  position: relative;
+  height: auto;
+}
+
+.image-content-container {
+  display: flex;
+
+  /* Test: Just for testing purpose, make row after making horizontal timeline */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+  /* Test: Checking whether padding is better or using width only */
+  /* padding: 0px 25%; */
+}
+
+/* .image-content-container .container-1, .container-2, .container-3{
+    width: 50%;
+} */
+
+.checkbox-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.checkbox-container label, input{
+  color: #130b43;
+  font-weight: bold;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 15%;
+  gap: 10px;
+  height: auto;
+}
+
+.container-2 {
+  display: none;
+}
+
+.container-3 {
+  display: none;
+}
+
+.image-content-container .image {
+  max-width: 350px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Error --------------------------------------------------- Previous Next Arrows --------------------------------------------------------------- */
+
+.previous-arrow button,
+.next-arrow button{
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  top: 35%;
+}
+
+.previous-arrow button{
+  right: 90%;
+}
+
+.next-arrow button{
+  left: 90%;
+}
+
+.previous-arrow button:hover,
+.next-arrow button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.circles-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.circles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.circles span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circles span.current-image {
+  cursor: default;
+  background-color: black;
+}
+
