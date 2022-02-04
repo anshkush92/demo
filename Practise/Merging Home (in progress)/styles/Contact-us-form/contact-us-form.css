@@ -5,9 +5,32 @@
 }
 
 .contact-us-form-body {
-  margin: 0%;
+  /* margin: 80px auto; */
   font-size: 18px;
   display: flex;
+}
+
+.contact-us-form-body p{
+  width: 100%;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.contact-us-form-body li{
+  cursor: default;
+}
+
+.contact-us-form-body .fas{
+  margin: 0px;
+  background-color: transparent;
+  width: 25px;
+}
+
+.contact-us-form-body a{
+  font: inherit;
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
 }
 
 /* Todo: Fix the strucuture of the CSS file :( */
@@ -22,11 +45,15 @@
   margin: auto;
 }
 
-.contact-us-form-heading{
+.contact-us-form-heading {
   margin-bottom: 30px;
 }
 
-.contact-us-form-heading #keber-email-id{
+.contact-us-form-heading .heading{
+  font-size: 25px;
+}
+
+.contact-us-form-heading #keber-email-id {
   color: #54389e;
 }
 
@@ -82,6 +109,8 @@ button {
 #left {
   height: 100vh;
   width: 100%;
+  /* padding: 50px 0px 0px 0px; */
+  margin-bottom: 50px;
 }
 
 #left {
@@ -96,19 +125,19 @@ button {
 
 #left {
   /* grid-template-rows: 3; */
-  color: #D0C0ED;
+  color: #d0c0ed;
   background-color: #54389e;
   display: none;
 }
 
-.get-in-touch h2{
-  color: #ECE5F1;
+.get-in-touch h2 {
+  color: #ece5f1;
+  font-size: 25px;
 }
 
 #left div {
   padding: 5%;
 }
-
 
 /* Fix: Targets the icon-content of the chat-us section */
 .icon-content-contact-us-form-container {
@@ -117,16 +146,17 @@ button {
   align-items: center;
 }
 
-.content-container h3{
-  color: #ECE5F1;
-  font-size: 22px;
+.content-container h3 {
+  color: #ece5f1;
+  font-size: 20px;
 }
 
-.icon-content-contact-us-form-container i{
-  width: 20px;
+.icon-content-contact-us-form-container i {
+  width: 25px;
 }
 
-.icon-content-contact-us-form-container .far, .fas{
+.icon-content-contact-us-form-container .far,
+.fas {
   font-size: 25px;
 }
 
@@ -134,9 +164,10 @@ button {
   text-align: center;
 }
 
-.icon-content-contact-us-form-container .icon-content{
-  font-size: 20px;
-  color: #ECE5F1;
+.icon-content-contact-us-form-container .icon-content {
+  font-size: 18px;
+  color: #ece5f1;
+  cursor: pointer;
 }
 
 /* Theory: Targeting the #left part of the contact-us-form */
@@ -146,6 +177,7 @@ button {
   width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+  list-style: none;
 }
 
 .footer i {
@@ -178,7 +210,7 @@ button {
   border-top-left-radius: 100%;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 769px) {
   #left {
     /* padding-left: 3%; */
     max-height: 100vh;
@@ -186,5 +218,10 @@ button {
     justify-content: space-between;
     flex-direction: column;
     width: 70%;
+  }
+
+  #main, #left{
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
   }
 }

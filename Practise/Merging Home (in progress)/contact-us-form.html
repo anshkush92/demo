@@ -23,21 +23,25 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
 
+    <!-- Theory: Linking the CSS files for the Contact-us Section -->
+    <link rel="stylesheet" href="./styles/Contact-us-form/contact-us-form.css">
+
     <!-- Theory: Linking the CSS files for the About - US Section (Image Caraousel) -->
-    <link rel="stylesheet" href="./styles/Image Caruosel/styles.css">
-    <link rel="stylesheet" href="./styles/Image Caruosel/keyframes.css">
-    <link rel="stylesheet" href="./styles/Image Caruosel/responsive-code.css">
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/styles.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/keyframes.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/responsive-code.css"> -->
 
     <!-- Theory: For the scrolling up button fixed at bottom -->
     <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
 
     <!-- Theory: Linking the CSS files for the Split Screen Parallax -->
-    <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css"> -->
 
     <!-- Theory: Linking the CSS files for the Footer -->
     <link rel="stylesheet" href="./styles/Footer/styles.css">
     <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
     <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+    <link rel="stylesheet" href="./styles/Footer/special-for-contact-us-form.css">
 
     <!-- Theory: Linking the CSS files for navigation bar -->
     <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
@@ -49,13 +53,13 @@
     <script src="./scripts/Scroll To Top/app.js" defer></script>
 
     <!-- Important: Using the JS file for the Image Caruosel Slideshow -->
-    <script src="./scripts/Image Caruosel/app.js" defer></script>
+    <!-- <script src="./scripts/Image Caruosel/app.js" defer></script> -->
 
     <!-- Important: Using the JS file for knowing the current page -->
     <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
 
     <!-- Important: Using the JS file for the Split screene Parallax -->
-    <script src="./scripts/Split Screen Parallax/app.js" defer></script>
+    <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
 
     <!-- Important: As we are using script in <head> so it is important to makke it defer -->
     <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
@@ -78,9 +82,7 @@
                 <li class="icon-content"><i class="fas fa-user"></i> About Us</li>
                 <li class="icon-content"><i class="fas fa-users-cog"></i> Roles</li>
                 <li class="icon-content"><i class="fas fa-question"></i> FAQs</li>
-                <li class="icon-content clicked"><i class="fas fa-phone-alt"></i> <a
-                        href="./contact-us-form.html">Contact
-                        US</a></li>
+                <li class="icon-content clicked"><i class="fas fa-phone-alt"></i> <a href="./contact-us-form.html">Contact US</a></li>
             </ul>
         </div>
 
@@ -107,7 +109,7 @@
 
                 <div class="nav-content">
                     <ul>
-                        <li class="current-page"><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li>About Us</li>
                         <li>Roles</li>
                         <li>FAQs</li>
@@ -118,177 +120,107 @@
             </nav>
         </div>
 
-        <!-- Error ------------------------------------------------------------ Why use KEBER Section ----------------------------------------------------------------->
+        <!-- Error ---------------------------------------------------- Contact Us Form ---------------------------------------------------------------- -->
 
-        <!-- Important: 3rd Section (Split Screen Parallax Scrolling UP) -->
-        <!-- Test: 3rd Section Split Screen Parallax Scrolling Up -->
+        <div class="contact-us-form-body">
+            <div id="left">
 
-        <section class="customers">
+                <div class="get-in-touch">
 
-            <div class="customers-title">
-                <h2>Are you one of them ?</h2>
-            </div>
+                    <h2>Get in touch</h2>
+                    <p>
+                        We would love to hear from you. Our friendly team is always her to chat.
+                    </p>
 
-            <div class="customers-test">
+                    <ul>
+                        <li class="icon-content-contact-us-form-container"><i class="far fa-envelope"></i>
 
-                <!-- Debug: Commenting out just for the testing purposes for the mobile view -->
-                <div class="tests">
+                            <div class="content-container">
+                                <h3>Chat to Us</h3>
+                                <p>Our friendly team is here to help</p>
+                                <p class="icon-content"><a href="mailto:keber@gmail.com"
+                                        target="_blank">keber@gmail.com</a></p>
+                            </div>
 
-                    <div class="image-container">
-                        <img src="./images/undraw_result_re_uj08.svg" alt="Result displayed in public">
-                    </div>
+                        </li>
 
+                        <li class="icon-content-contact-us-form-container"><i class="fas fa-map-marker-alt"></i>
 
-                    <div class="content-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint commodi quibusdam
-                            recusandae
-                            beatae nostrum, voluptates accusantium facilis est delectus, facere odit vel nemo ratione
-                            veniam. Vel expedita nihil nemo suscipit necessitatibus. Vitae aliquid doloribus officiis
-                            soluta, nihil sequi perspiciatis animi. Illo, veritatis cumque temporibus quo nobis vel
-                            voluptas
-                            tempore!</p>
-                    </div>
+                            <div class="content-container">
+                                <h3>Office</h3>
+                                <p>Come say hello at our office HQ</p>
+                                <p class="icon-content"><a
+                                        href="https://www.google.com/maps/dir//Indian+Institute+of+Information+Technology+and+Management+Gwalior,+Morena+Link+Rd,+IIITM+Campus,+Gwalior,+Madhya+Pradesh+474015/@26.2494521,78.1719501,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3976c6e5d32a4d53:0xf834069adc0c9b89!2m2!1d78.1741388!2d26.2494521"
+                                        target="_blank">ABV-IIITM Gwalior</a></p>
+                            </div>
+
+                        </li>
+
+                        <li class="icon-content-contact-us-form-container"><i class="fas fa-phone"></i>
+
+                            <div class="content-container">
+                                <h3>Phone</h3>
+                                <p>Monday to Friday 9am to 5pm</p>
+                                <p class="icon-content">6969696969 </p>
+                            </div>
+
+                        </li>
+                    </ul>
+
 
                 </div>
 
-                <div class="tests">
+                <!-- <div class="footer">
+                    <i class="fa fa-facebook-square fa-2x no-colors"   aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x no-colors" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-2x no-colors" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-2x no-colors" aria-hidden="true"></i>
+                </div> -->
 
-                    <div class="image-container">
-                        <img src="./images/undraw_public_discussion_re_w9up.svg" alt="Result discussion in public">
-                    </div>
-
-
-                    <div class="content-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi, aspernatur maxime id
-                            minus
-                            quae eveniet consectetur voluptates, beatae animi, atque nulla harum inventore quis ex
-                            itaque
-                            tempore? Cupiditate veritatis itaque sit officia dignissimos? Neque earum libero aut
-                            corrupti
-                            sequi nesciunt perspiciatis atque, aliquid, molestias aspernatur ea voluptatibus voluptatum
-                            assumenda.</p>
-                    </div>
-
-                </div>
-
-
-                <div class="tests">
-
-                    <div class="image-container">
-                        <img src="./images/undraw_authentication_re_svpt.svg" alt="Authentication">
-                    </div>
-
-
-                    <div class="content-container">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni autem obcaecati,
-                            fugit iste, praesentium voluptas explicabo error, dolor laudantium fugiat facere totam iure
-                            numquam. Hic, tempora adipisci quia qui ea ut voluptate voluptates. Vel neque autem voluptas
-                            harum non beatae accusamus! Commodi impedit voluptate recusandae enim perspiciatis soluta
-                            sapiente!</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- Error --------------------------------------------------------------- About Us Section --------------------------------------------------------------->
-        <section id="about-us">
-
-            <div class="about-us-title">
-                <div class="main-title">
-
-                    <div class="what-is">
-                        <span class="about-us-title-what">What</span>
-                        <span class="about-us-title-is">is</span>
-                    </div>
-
-                    <div class="about-us-title-keber">
-                        <p>KEBER</p>
-                    </div>
-                </div>
-
-                <div class="about-us-title-question-mark">
-                    <p>?</p>
-                </div>
-            </div>
-
-            <div class="arrow-image-content-container">
-                <div class="image-content-container">
-
-                    <div class="previous-arrow">
-                        <button>&#10094;</button>
-                    </div>
-
-                    <!-- Test: Added dummy image-slideshow class to make the slideshow effect -->
-                    <div class="container-1 image-slideshow">
-                        <div class="image">
-                            <img src="./images/Image Caruosel/undraw_certificate_re_yadi.svg" alt="Personal Results">
-                        </div>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga consectetur
-                                quis
-                                tenetur
-                                sed beatae, sint illum neque facere laborum maxime minima iure officia eaque aperiam
-                                ipsum
-                                voluptate
-                                esse aut!</p>
-                        </div>
-                    </div>
-
-                    <div class="container-2 image-slideshow">
-                        <div class="image">
-                            <img src="./images/Image Caruosel/undraw_job_hunt_re_q203.svg" alt="Random">
-                        </div>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis aliquid
-                                dicta
-                                consequuntur a impedit sapiente aperiam odio consectetur omnis, minima quis perspiciatis
-                                tempore
-                                aut
-                                et sit vitae explicabo porro!</p>
-                        </div>
-                    </div>
-
-                    <div class="container-3 image-slideshow">
-                        <div class="image">
-                            <img src="./images/Image Caruosel/undraw_personal_file_re_5joy.svg" alt="Random">
-                        </div>
-
-                        <div class="content">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos
-                                voluptate
-                                ullam
-                                cupiditate explicabo a libero delectus officiis harum sequi corrupti minus debitis
-                                nesciunt,
-                                voluptates quisquam, soluta odio eaque! Est?</p>
-                        </div>
-                    </div>
-
-                    <div class="next-arrow">
-                        <button>&#10095;</button>
-                    </div>
-
-                </div>
-
-                <div class="circles-checkbox-container">
-
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="disable-slideshow" id="disable">
-                        <label for="disable">Disable automatic slideshow</label>
-                    </div>
-
-                    <div class="circles">
-                        <!-- Theory: Using the data-* HTML attributes to assing the id instead of the ID selector -->
-                        <span data-id="1" class="current-image"></span>
-                        <span data-id="2"></span>
-                        <span data-id="3"></span>
-                    </div>
-
+                <div id="parent">
+                    <div id="quarter"></div>
+                    <div id="circle"></div>
                 </div>
 
             </div>
 
-        </section>
+
+            <div id="main">
+
+                <div id="demo">
+
+                    <div class="contact-us-form-heading">
+                        <h2 class="heading">Reach Us</h2>
+                        <p>You can contact us anytime via <span id="keber-email-id">keber@gmail.com</span></p>
+                    </div>
+
+
+                    <div class="contact-us-form-form">
+                        <form action="#form" id="form">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required />
+
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" required />
+
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel" name="phone" required />
+
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" required />
+
+                            <label for="message">Message Us</label>
+                            <textarea name="mess" id="mess" cols="auto" rows="auto"></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
 
         <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
 

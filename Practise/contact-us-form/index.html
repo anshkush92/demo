@@ -5,67 +5,113 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://use.fontawesome.com/56f79e5ba6.js"></script>
+
+  <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous" defer></script>
+
   <link rel="stylesheet" href="contact-us.css" />
   <title>Contact Us</title>
 </head>
 
 <body>
-  <div id="webview">
-    <div id="leftt">
-      <h3>Get in touch</h3>
-      <p>
 
-        We would love to hear from you. Our friendly team is always her to chat.
-      </p>
-    </div>
-    <div>
-      <p>
-      <h4>Chat to us</h4>
-      Our friendly team is here to help.
-      keber@gmail.com </p>
-    </div>
-    <footer>
-      <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-      <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-    </footer>
+  <div class="contact-us-form-body">
+    <div id="left">
 
-    <div id="parent">
-      <div id="quarter"></div>
-      <div id="circle"></div>
-    </div>
+      <div class="get-in-touch">
+
+        <h2>Get in touch</h2>
+        <p>
+          We would love to hear from you. Our friendly team is always her to chat.
+        </p>
+
+        <ul>
+          <li class="icon-content-contact-us-form-container"><i class="far fa-envelope"></i>
+
+            <div class="content-container">
+              <h3>Chat to Us</h3>
+              <p>Our friendly team is here to help</p>
+              <p class="icon-content">keber@gmail.com</p>
+            </div>
+
+          </li>
+
+          <li class="icon-content-contact-us-form-container"><i class="fas fa-map-marker-alt"></i>
+
+            <div class="content-container">
+              <h3>Office</h3>
+              <p>Come say hello at our office HQ</p>
+              <p class="icon-content">IIITM Gwalior</p>
+            </div>
+
+          </li>
+
+          <li class="icon-content-contact-us-form-container"><i class="fas fa-phone"></i>
+
+            <div class="content-container">
+              <h3>Phone</h3>
+              <p>Monday to Friday 9am to 5pm</p>
+              <p class="icon-content">6969696969 </p>
+            </div>
+
+          </li>
+        </ul>
 
 
-
-  </div>
-  <div id="main">
-    <div id="demo">
-      <div>
-        <h2 class="heading">Reach Us</h2>
-        <p class="heading">you can contact us anytime via keber@gmail.com</p>
       </div>
-      <form action="#form" id="form">
-        <label for="name"><span>Name</span></label>
-        <input id="name" type="text" name="name" />
-  
-        <label for="email"><span>Mail-Id</span></label>
-        <input id="email" type="email" name="email" />
-  
-        <label for="phone"><span>Phone Number</span></label>
-        <input id="phone" type="tel" name="phone" />
-  
-        <label for="subject"><span>Subject</span></label>
-        <input type="text" name="subject" id="subject" />
-  
-        <label for="message"><span>Message for us</span></label>
-        <textarea name="mess" id="mess" cols="auto" rows="auto"></textarea>
-  
-        <button type="submit">Send Message</button>
-      </form>
+
+      <div class="footer">
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+      </div>
+
+      <div id="parent">
+        <div id="quarter"></div>
+        <div id="circle"></div>
+      </div>
+
+    </div>
+
+
+    <div id="main">
+
+      <div id="demo">
+
+        <div class="contact-us-form-heading">
+          <h2 class="heading">Reach Us</h2>
+          <p class="heading">You can contact us anytime via <span id="keber-email-id">keber@gmail.com</span></p>
+        </div>
+
+
+        <div class="contact-us-form-form">
+          <form action="#form" id="form">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required/>
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" required/>
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" name="phone" required/>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" required/>
+
+            <label for="message">Message Us</label>
+            <textarea name="mess" id="mess" cols="auto" rows="auto"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+
+      </div>
+
     </div>
   </div>
+
+
 </body>
 
 </html>

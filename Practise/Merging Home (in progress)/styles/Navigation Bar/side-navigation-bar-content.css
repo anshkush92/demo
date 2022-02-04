@@ -49,6 +49,13 @@ aside {
   background-color: rgba(225,235,255,1);
 }
 
+.side-navigation-bar-content a{
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: inherit;
+}
+
 /* Theory: For the font-awesome icons for the side-nvaigation bar */
 .fas {
   width: 50px;
