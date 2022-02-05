@@ -1,0 +1,301 @@
+<!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEBER</title>
+
+    <!-- Important: Linking the font-awesome kit for importing the icons -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+
+    <!-- Important: Importaing the fonts from the Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Test: Linking the ScrollMagic CDN File for using the Scroll Magic Plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
+
+    <!-- Theory: Linking the CSS files for the Roles Section -->
+    <link rel="stylesheet" href="./styles/Roles/styles.css">
+
+    <!-- Theory: Linking the CSS files for the About - US Section (Image Caraousel) -->
+    <link rel="stylesheet" href="./styles/Image Caruosel/styles.css">
+    <link rel="stylesheet" href="./styles/Image Caruosel/keyframes.css">
+    <link rel="stylesheet" href="./styles/Image Caruosel/responsive-code.css">
+
+    <!-- Theory: For the scrolling up button fixed at bottom -->
+    <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Split Screen Parallax -->
+    <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Footer -->
+    <link rel="stylesheet" href="./styles/Footer/styles.css">
+    <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
+    <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+
+    <!-- Theory: Linking the CSS files for navigation bar -->
+    <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar-content.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/backdrop-filter.css">
+
+
+    <!-- Important: Using the JS file for the Scrolling to top -->
+    <script src="./scripts/Scroll To Top/app.js" defer></script>
+
+    <!-- Important: Using the JS file for the Image Caruosel Slideshow -->
+    <!-- <script src="./scripts/Image Caruosel/app.js" defer></script> -->
+
+    <!-- Important: Using the JS file for knowing the current page -->
+    <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+
+    <!-- Important: Using the JS file for the Split screene Parallax -->
+    <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
+
+    <!-- Important: As we are using script in <head> so it is important to makke it defer -->
+    <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+</head>
+
+<body>
+
+    <!-- Error ----------------------------------------------------- Side Navigation Bar Section ------------------------------------------------------------ -->
+    <div id="backdrop-filter"></div>
+
+    <!-- Important: 1st part Navigation Bar (Vertical (Side Navigation bar)) -->
+    <!-- Theory: For making the side-navigation-bar overlay -->
+    <aside>
+        <div class="side-navigation-bar-content">
+            <h2>KEBER</h2>
+            <ul>
+                <li class="icon-content"><i class="fas fa-home"></i> <a href="./index.html">Home</a> </li>
+                <li class="icon-content"><i class="fas fa-user"></i> About Us</li>
+                <li class="icon-content"><i class="fas fa-users-cog"></i> <a href="./roles.html">Roles</a></li>
+                <li class="icon-content clicked"><i class="fas fa-question"></i> FAQs</li>
+                <li class="icon-content"><i class="fas fa-phone-alt"></i> <a href="./contact-us-form.html">Contact
+                        US</a></li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <!-- Error --------------------------------------------------------- Hamburger Icon Section ---------------------------------------------------------------- -->
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
+        <!-- Theory: For making the hamburger-cross animated icon -->
+        <nav class="side-navigation-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+        <!-- Error ---------------------------------------------------- Horizontal Navigation Bar ---------------------------------------------------------------- -->
+        <!-- Important: 2nd Part Horizontal Navigation Bar -->
+        <!-- Theory: For making the whole navigation bar -->
+        <div class="navigation-bars-container">
+
+            <!-- Theory: For making the top navigation bar -->
+            <nav class="navigation-bar">
+                <div class="logo"> <a href="./index.html">KEBER</a></div>
+
+                <div class="nav-content">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>About Us</li>
+                        <li class="current-page"><a href="./roles.html">Roles</a></li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+                <div class="contact-us"> <a href="./contact-us-form.html">Contact US</a></div>
+            </nav>
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Roles ----------------------------------------------------------------------- -->
+
+        <div class="roles-container">
+
+            <div class="admin">
+
+                <div class="admin-backdrop-filter"></div>
+
+                <div class="image-container">
+                    <img src="./images/Roles/Admin-amico.svg" alt="Admin-image">
+                </div>
+
+                <div class="content-container">
+
+                    <div class="admin-content-heading-div">
+                        <p class="admin-content-heading">Admin</p>
+                    </div>
+
+                    <div class="admin-content-div">
+                        <p class="admin-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
+                            est
+                            laudantium ipsum, amet officiis nostrum laboriosam aut consectetur maxime?</p>
+                    </div>
+
+                </div>
+
+                <div class="admin-button-container">
+                    <button id="admin-sign-in">Sign In</button>
+                </div>
+
+            </div>
+
+            <div class="student">
+
+                <div class="student-backdrop-filter"></div>
+
+                <div class="image-container">
+                    <img src="./images/Roles/Learning-cuate.svg" alt="Student-image">
+                </div>
+
+                <div class="content-container">
+
+                    <div class="student-content-heading-div">
+                        <p class="student-content-heading">Student</p>
+                    </div>
+
+                    <div class="student-content-div">
+                        <p class="student-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente perferendis non
+                            sed
+                            blanditiis recusandae eos illo ipsa maxime odit?
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="student-button-container">
+                    <button class="student-sign-up">Sign Up</button>
+                    <button class="student-sign-in">Sign In</button>
+                </div>
+
+            </div>
+
+            <div class="verifier">
+
+                <div class="verifier-backdrop-filter"></div>
+
+                <div class="image-container">
+                    <img src="./images/Roles/Data_security_05.svg" alt="Verfiying results">
+                </div>
+
+                <div class="content-container">
+
+                    <div class="verifier-content-heading-div">
+                        <p class="verifier-content-heading">Verifier</p>
+                    </div>
+
+                    <div class="verifier-content-div">
+                        <p class="verifier-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                            quaerat a
+                            perspiciatis quidem mollitia iste amet eaque saepe consectetur vel!</p>
+                    </div>
+
+
+                </div>
+
+                <div class="verifier-button-container">
+                    <button class="verifier-verfiy">Verify</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
+
+        <!-- Testing: Commenting out for testing purpose for mobile view -->
+        <!-- Important: 4th part Footer (for now) -->
+        <div class="footer-container">
+            <h2>Free trial of 1 month</h2>
+
+            <footer>
+
+                <!-- Important: Contains sign up to newsletter -->
+                <section>
+                    <h3>KEBER</h3>
+
+                    <!--Todo: Should contain images about different social media -->
+                    <ul class="social-media-icons-container">
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the services of the website -->
+                <section>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Privacy of Information</li>
+                        <li>Marks Integrity</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the Roles section (Admin, Student, Verifier) -->
+                <section>
+                    <h3>Roles</h3>
+                    <ul>
+                        <li>Admin</li>
+                        <li>Students</li>
+                        <li>Verifier</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the informatio of how to use + about us -->
+                <section>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>How to use</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the form for the subscription -->
+                <section>
+                    <h3>Don't Miss Out</h3>
+                    <p>Notified first for our products samples, coupons and latest news</p>
+                    <form action="">
+                        <div class="footer-newsletter-form">
+                            <input type="email" name="useremail" id="user-email" placeholder="Enter Email Address">
+                            <button type="submit" id="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+
+            </footer>
+
+            <!-- Important: Container which stores the copyright and back to top section -->
+            <div class="container">
+                <div>© 2022 KEBER</div>
+                <button> <a href="#">Back to top &#94;</a> </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="move-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+</body>
+
+</html>
