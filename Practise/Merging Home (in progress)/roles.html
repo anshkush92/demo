@@ -57,6 +57,7 @@
 
     <!-- Important: Using the JS file for knowing the current page -->
     <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/current_page_tell_side_navigation_bar.js" defer></script> -->
 
     <!-- Important: Using the JS file for the Split screene Parallax -->
     <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
@@ -64,6 +65,9 @@
     <!-- Important: As we are using script in <head> so it is important to makke it defer -->
     <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
     <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+    <!-- Important: To make the navbar change the color -->
+    <script src="./scripts/Navigation Bar/change_color_navbar.js" defer></script>
 
 </head>
 
@@ -80,8 +84,8 @@
             <ul>
                 <li class="icon-content"><i class="fas fa-home"></i> <a href="./index.html">Home</a> </li>
                 <li class="icon-content"><i class="fas fa-user"></i> About Us</li>
-                <li class="icon-content"><i class="fas fa-users-cog"></i> <a href="./roles.html">Roles</a></li>
-                <li class="icon-content clicked"><i class="fas fa-question"></i> FAQs</li>
+                <li class="icon-content clicked"><i class="fas fa-users-cog"></i> <a href="./roles.html">Roles</a></li>
+                <li class="icon-content"><i class="fas fa-question"></i> FAQs</li>
                 <li class="icon-content"><i class="fas fa-phone-alt"></i> <a href="./contact-us-form.html">Contact
                         US</a></li>
             </ul>
@@ -117,7 +121,12 @@
                     </ul>
                 </div>
 
-                <div class="contact-us"> <a href="./contact-us-form.html">Contact US</a></div>
+                <div class="contact-us-container">
+                    <div class="get-started"><a href="./roles.html">Get Started <span
+                                id="get-started-right-arrow">&#8594;</span></a>
+                    </div>
+                    <div class="contact-us"><a href="./contact-us-form.html">Contact US</a></div>
+                </div>
             </nav>
         </div>
 

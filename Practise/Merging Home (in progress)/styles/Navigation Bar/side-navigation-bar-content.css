@@ -84,6 +84,13 @@ aside {
   background-color: rgba(225,235,255,0.7);
 }
 
+.clicked {
+  border-left: 5px solid rgb(87, 38, 223);
+  color: rgba(46,87,232,1);
+  background-color: rgba(225,235,255,0.7);
+  cursor: default;
+}
+
 /* Error ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Important: Space for the media query :) */
 
