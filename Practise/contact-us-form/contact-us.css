@@ -1,85 +1,171 @@
-#demo {
-  max-width: 500px;
-  margin: auto;
-}
-footer {
-  display: grid;
-}
-.heading {
-  margin-left: 5%;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-label,
+.contact-us-form-body {
+  margin: 0%;
+  font-size: 18px;
+  display: flex;
+}
+
+/* Todo: Fix the strucuture of the CSS file :( */
+/* Error -------------------------------------------------------------- Right Side ------------------------------------------------------------ */
+
+#demo {
+  max-width: 600px;
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.contact-us-form-heading{
+  margin-bottom: 30px;
+}
+
+.contact-us-form-heading #keber-email-id{
+  color: #54389e;
+}
+
+.contact-us-form-form label,
 button {
   display: block;
 }
 
-button {
-  border-radius: 8px;
-  background-color: #f6d860;
-}
-label {
+.contact-us-form-form label {
   font-weight: bolder;
-}
-textarea {
-  border-radius: 8px;
-
-  width: 90%;
-  height: 80px;
-}
-form {
-  text-align: center;
+  margin-bottom: 5px;
 }
 
-input {
-  border-radius: 8px;
+.contact-us-form-form input {
+  border-radius: 4px;
   height: 35px;
-  width: 90%;
-}
-label {
-  text-align: left;
-  margin-left: 5%;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-button {
-  font-size: 100%;
-  margin: auto;
-  width: 200px;
-  height: 50px;
+.contact-us-form-form textarea {
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  resize: none;
 }
+
+.contact-us-form-form button {
+  font-size: 100%;
+  padding: auto;
+  width: 100%;
+
+  height: 50px;
+  border-radius: 4px;
+
+  color: #fffaff;
+  background-color: #54389e;
+}
+
 #main {
-  background-color: #95cd41;
+  background-color: #fffaff;
   display: grid;
 }
 
+/* Error ----------------------------------------------------------- Left side ------------------------------------------------ */
+
 #main,
-#webview {
+#left {
   height: 100vh;
   width: 100%;
 }
-body {
-  margin: 0%;
-  font-size: 22px;
-  display: flex;
+
+#left {
+  width: 100%;
+  height: auto;
 }
 
-#webview {
-  background-color: #fffda2;
+#left .get-in-touch {
+  width: 100%;
+  padding: 5% 8%;
+}
+
+#left {
+  /* grid-template-rows: 3; */
+  color: #D0C0ED;
+  background-color: #54389e;
   display: none;
+}
+
+.get-in-touch h2{
+  color: #ECE5F1;
+}
+
+#left div {
+  padding: 5%;
+}
+
+
+/* Fix: Targets the icon-content of the chat-us section */
+.icon-content-contact-us-form-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-container h3{
+  color: #ECE5F1;
+  font-size: 22px;
+}
+
+.icon-content-contact-us-form-container i{
+  width: 20px;
+}
+
+.icon-content-contact-us-form-container .far, .fas{
+  font-size: 25px;
+}
+
+.fa {
+  text-align: center;
+}
+
+.icon-content-contact-us-form-container .icon-content{
+  font-size: 20px;
+  color: #ECE5F1;
+}
+
+/* Theory: Targeting the #left part of the contact-us-form */
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer i {
+  margin: 0px 10px;
 }
 
 #parent {
   position: relative;
+  height: 210px;
 }
+
 #circle {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   background-color: #baffb4;
   opacity: 0.8;
   border-radius: 100%;
-  right: 90px;
-  bottom: 80px;
+  right: 50px;
+  bottom: 50px;
 }
 
 #quarter {
@@ -87,15 +173,18 @@ body {
   bottom: 0%;
   right: 0%;
   background-color: #ff6363;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-top-left-radius: 100%;
 }
 
 @media (min-width: 660px) {
-  #webview {
-    padding-left: 3%;
-    display: grid;
+  #left {
+    /* padding-left: 3%; */
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 70%;
   }
 }

@@ -1,3 +1,5 @@
+// Todo: Current width event listener 
+
 // console.log("Hello world");
 const html_element = document.querySelector("html");
 // console.log(html_element);
