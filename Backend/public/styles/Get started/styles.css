@@ -1,0 +1,29 @@
+.get-started-section{
+    background-color: #e1ebff;
+    /* width: 100%; */
+    height: 100px;
+    text-align: center;
+    /* font-size: 30px; */
+    padding: 25px 0px;
+    margin: 0px;
+}
+
+.get-started-section a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #2e57e8;
+}
+
+.footer-container{
+    margin: 0px auto;
+}
+
+@media (max-width:550px) {
+    .get-started-section {
+        padding: 35px 0px;
+    }
+
+    .get-started-section a{
+        font-size: 20px;
+    }
+}
