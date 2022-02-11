@@ -100,6 +100,8 @@ button {
 
   color: #fffaff;
   background-color: #54389e;
+
+  cursor: pointer;
 }
 
 #main {
