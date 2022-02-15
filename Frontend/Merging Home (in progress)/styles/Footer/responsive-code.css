@@ -1,0 +1,12 @@
+/* Important: Media Queries Section for responsive Code */
+@media (max-width: 1100px) {
+  footer{
+    flex-direction: column;
+  }
+
+  .social-media-icons-container{
+    margin: auto 0px;
+  }
+
+}
+

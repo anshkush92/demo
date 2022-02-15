@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(251, 251, 255);
+}
+
+.image-content-container{
+    display: flex;
+    width: 100%;
+}
+
+.image-container{
+    height: 80%;
+    width: 50%;
+}

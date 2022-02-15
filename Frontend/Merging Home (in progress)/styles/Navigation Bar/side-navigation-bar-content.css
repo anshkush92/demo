@@ -1,0 +1,119 @@
+aside {
+  display: flex;
+  transform: translateX(-160px);
+  transition: transform 0.5s ease;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 2;
+}
+
+.side-nav-bar-animation {
+  transform: translateX(0px);
+}
+
+/* Important: For the content of the side-navigation-bar, that is the navigation items */
+.side-navigation-bar-content {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  max-width: 200px;
+  height: 1000vh;
+  justify-content: flex-start;
+  align-items: center;
+  /* position: fixed; */
+  background-color: rgba(225,235,255,1);
+  transition: transform 0.5s ease;
+
+  display: none;
+  /* overflow: hidden; */
+  /* margin: 50px 0px; */
+}
+
+/* Theory: For basic styling of the <h2> element of the side-navigation-bar, it is our logo */
+.side-navigation-bar-content h2 {
+  font-size: 30px;
+  width: -webkit-fill-available;
+  padding: 15px 10px;
+  /* margin-top: 25px; */
+  text-align: center;
+  background-color: rgba(225,235,255,1);
+  color: #130b43;
+  border-bottom: 1px solid black;
+}
+
+.side-navigation-bar-content ul {
+  width: 100%;
+  background-color: rgba(225,235,255,1);
+}
+
+.side-navigation-bar-content a{
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: inherit;
+}
+
+/* Theory: For the font-awesome icons for the side-nvaigation bar */
+.fas {
+  width: 50px;
+  margin: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(225,235,255,1);
+}
+
+/* Theory: For styling the content associated with the font-awesome icons */
+.side-navigation-bar-content .icon-content {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+  /* margin: 5px 0px; */
+  padding: 5px 0px;
+  background-color: rgba(225,235,255,1);
+}
+
+/* Theory: For giving a left-border hover effect (inspired from essence) */
+.side-navigation-bar-content li:hover {
+  border-left: 5px solid rgba(46,87,232,1);
+  color: rgba(46,87,232,1);
+  background-color: rgba(225,235,255,0.7);
+}
+
+.clicked {
+  border-left: 5px solid rgba(46,87,232,1);
+  color: rgba(46,87,232,1);
+  background-color: rgba(225,235,255,0.7);
+  cursor: default;
+}
+
+/* Error ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Important: Space for the media query :) */
+
+@media (max-width: 768px) {
+  .side-navigation-bar {
+    display: flex;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+
+  .side-navigation-bar-content {
+    display: flex;
+    width: 160px;
+  }
+
+  .fas{
+    width: 33px;
+    font-size: 25px;
+  }
+
+  .side-navigation-bar-content .icon-content{
+    font-size: 18px;
+  }
+}

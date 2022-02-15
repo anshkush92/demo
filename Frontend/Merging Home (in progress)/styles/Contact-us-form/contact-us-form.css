@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.contact-us-form-body {
+  /* margin: 80px auto; */
+  font-size: 18px;
+  display: flex;
+}
+
+.contact-us-form-body p{
+  width: 100%;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.contact-us-form-body li{
+  cursor: default;
+}
+
+.contact-us-form-body .fas{
+  margin: 0px;
+  background-color: transparent;
+  width: 25px;
+}
+
+.contact-us-form-body a{
+  font: inherit;
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}
+
+.navigation-bar{
+  background-color: #ffffff;
+}
+
+/* Todo: Fix the strucuture of the CSS file :( */
+/* Error -------------------------------------------------------------- Right Side ------------------------------------------------------------ */
+
+#demo {
+  max-width: 600px;
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.contact-us-form-heading {
+  margin-bottom: 30px;
+}
+
+.contact-us-form-heading .heading{
+  font-size: 25px;
+}
+
+.contact-us-form-heading #keber-email-id {
+  color: #54389e;
+}
+
+.contact-us-form-form label,
+button {
+  display: block;
+}
+
+.contact-us-form-form label {
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.contact-us-form-form input {
+  border-radius: 4px;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-us-form-form textarea {
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.contact-us-form-form button {
+  font-size: 100%;
+  padding: auto;
+  width: 100%;
+
+  height: 50px;
+  border-radius: 4px;
+
+  color: #fffaff;
+  background-color: #54389e;
+}
+
+#main {
+  background-color: #fffaff;
+  display: grid;
+}
+
+/* Error ----------------------------------------------------------- Left side ------------------------------------------------ */
+
+#main,
+#left {
+  height: 100vh;
+  width: 100%;
+  /* padding: 50px 0px 0px 0px; */
+  margin-bottom: 50px;
+}
+
+#left {
+  width: 100%;
+  height: auto;
+}
+
+#left .get-in-touch {
+  width: 100%;
+  padding: 10% 8%;
+}
+
+#left {
+  /* grid-template-rows: 3; */
+  color: #d0c0ed;
+  background-color: #54389e;
+  display: none;
+}
+
+.get-in-touch h2 {
+  color: #ece5f1;
+  font-size: 25px;
+}
+
+#left div {
+  padding: 5%;
+}
+
+/* Fix: Targets the icon-content of the chat-us section */
+.icon-content-contact-us-form-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-container h3 {
+  color: #ece5f1;
+  font-size: 20px;
+}
+
+.icon-content-contact-us-form-container i {
+  width: 25px;
+}
+
+.icon-content-contact-us-form-container .far,
+.fas {
+  font-size: 25px;
+}
+
+.fa {
+  text-align: center;
+}
+
+.icon-content-contact-us-form-container .icon-content {
+  font-size: 18px;
+  color: #ece5f1;
+  cursor: pointer;
+}
+
+/* Theory: Targeting the #left part of the contact-us-form */
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.footer i {
+  margin: 0px 10px;
+}
+
+#parent {
+  position: relative;
+  height: 210px;
+}
+
+#circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #baffb4;
+  opacity: 0.8;
+  border-radius: 100%;
+  right: 50px;
+  bottom: 50px;
+}
+
+#quarter {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: #ff6363;
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 100%;
+}
+
+@media (min-width: 769px) {
+  #left {
+    /* padding-left: 3%; */
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  #main, #left{
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+  }
+}

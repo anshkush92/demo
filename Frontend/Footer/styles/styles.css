@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Error ======================================================================================================================================================== */
+
+html {
+  /* Theory: CSS Varialbes for storing colors */
+  --bg-color: #ebbe97;
+  --form-bg-color: #010001;
+  --button-border: #fffffe;
+  --heading-section-color: #f2f3f3;
+  --list-items-color: #f0f1ec;
+}
+
+body {
+  background-color: var(--form-bg-color);
+  color: var(--list-items-color);
+  overflow: hidden;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: footer-container (<div> that contains footer) properties */
+.footer-container {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 35px auto;
+}
+
+.footer-container h2 {
+  text-align: center;
+  margin: 15px auto 15px auto;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: Contains the styling for the <footer> element like the <heading> and its items*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px auto 10px auto;
+}
+
+ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+.social-media-icons-container{
+  display: flex;
+  margin: 3px -38px;
+}
+
+/* Todo: Styling for the heading of the <section> */
+h3 {
+  display: inline-block;
+  margin: 5px;
+  color: var(--heading-section-color);
+  border-bottom: 1px solid var(--button-border);
+}
+
+p {
+  margin: 5px;
+}
+
+.footer-newsletter-form{
+  display: flex;
+}
+
+.footer-newsletter-form #user-email{
+  width: 80%;
+  margin: 3px 0px 15px 5px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+::placeholder{
+  color: white;
+  opacity: 0.7;
+}
+
+.footer-newsletter-form #submit-button{
+  width: 20%;
+  margin: 3px 5px 15px 0px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* Error ======================================================================================================================================================== */
+
+/* Fix: Styling for the part that is below the <footer> our copyright section*/
+.container {
+  display: flex;
+  margin: 15px 0px;
+  justify-content: space-evenly;
+}
+
+.container button{
+  background-color: transparent;
+  color: white;
+  border: 0px solid white;
+  cursor: pointer;
+}

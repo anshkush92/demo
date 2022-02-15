@@ -1,0 +1,78 @@
+/* References => https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+
+/* Fix: Social Media Colors below  */
+/* References => https://www.lockedownseo.com/social-media-colors/ */
+
+/* Theory: color: changes the square color, background-color: changes the whole box color + icon */
+
+.fab {
+  font-size: 4rem;
+  display: block;
+}
+
+.fab:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+  opacity: 1;
+  /* background-color: rgb(248, 239, 239); */
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-facebook-square {
+  color: #1877f2;
+}
+
+/* References => https://stackoverflow.com/questions/56574105/how-to-add-a-color-gradient-to-the-instagram-logo-without-affecting-the-visibili */
+
+.fa-instagram-square {
+  color: transparent;
+  background: -webkit-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -o-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}

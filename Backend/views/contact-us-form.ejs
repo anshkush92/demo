@@ -1,0 +1,210 @@
+<!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEBER</title>
+
+    <!-- Important: Linking the font-awesome kit for importing the icons -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+
+    <!-- Important: Importaing the fonts from the Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Test: Linking the ScrollMagic CDN File for using the Scroll Magic Plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
+
+    <!-- Theory: Linking the CSS files for the Contact-us Section -->
+    <link rel="stylesheet" href="./styles/Contact-us-form/contact-us-form.css">
+
+    <!-- Theory: Linking the CSS files for the About - US Section (Image Caraousel) -->
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/styles.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/keyframes.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/Image Caruosel/responsive-code.css"> -->
+
+    <!-- Theory: For the scrolling up button fixed at bottom -->
+    <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Split Screen Parallax -->
+    <!-- <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css"> -->
+
+    <!-- Theory: Linking the CSS files for the Footer -->
+    <link rel="stylesheet" href="./styles/Footer/styles.css">
+    <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
+    <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+    <link rel="stylesheet" href="./styles/Footer/special-for-contact-us-form.css">
+
+    <!-- Theory: Linking the CSS files for navigation bar -->
+    <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar-content.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/backdrop-filter.css">
+
+    <!-- Important: Using the JS file for the Scrolling to top -->
+    <script src="./scripts/Scroll To Top/app.js" defer></script>
+
+    <!-- Important: Using the JS file for the Image Caruosel Slideshow -->
+    <!-- <script src="./scripts/Image Caruosel/app.js" defer></script> -->
+
+    <!-- Important: Using the JS file for knowing the current page -->
+    <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+    <script src="./scripts/Navigation Bar/current_page_tell_side_navigation_bar.js" defer></script>
+
+    <!-- Important: Using the JS file for the Split screene Parallax -->
+    <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
+
+    <!-- Important: As we are using script in <head> so it is important to makke it defer -->
+    <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+    <!-- Important: To make the navbar change the color -->
+    <!-- <script src="./scripts/Navigation Bar/change_color_navbar.js" defer></script> -->
+
+</head>
+
+<body>
+
+    <!-- Error ----------------------------------------------------- Side Navigation Bar Section ------------------------------------------------------------ -->
+    <div id="backdrop-filter"></div>
+
+    <!-- Theory: Including the side-navigation Partials using the EJS -->
+    <%- include("includes/side-navigation-bar", {}) %>
+
+    <!-- Error --------------------------------------------------------- Hamburger Icon Section ---------------------------------------------------------------- -->
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
+        <!-- Theory: For making the hamburger-cross animated icon -->
+        <nav class="side-navigation-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+        <!-- Error ---------------------------------------------------- Horizontal Navigation Bar ---------------------------------------------------------------- -->
+        <!-- Theory: Including the header Partials using the EJS -->
+        <%- include("includes/header", {}) %>
+
+        <!-- Error ---------------------------------------------------- Contact Us Form ---------------------------------------------------------------- -->
+
+        <div class="contact-us-form-body">
+            <div id="left">
+
+                <div class="get-in-touch">
+
+                    <h2>Get in touch</h2>
+                    <p>
+                        We would love to hear from you. Our friendly team is always here to chat.
+                    </p>
+
+                    <ul>
+                        <li class="icon-content-contact-us-form-container"><i class="far fa-envelope"></i>
+
+                            <div class="content-container">
+                                <h3>Chat to Us</h3>
+                                <p>Our friendly team is here to help</p>
+                                <p class="icon-content"><a href="mailto:keber@gmail.com"
+                                        target="_blank">keber@gmail.com</a></p>
+                            </div>
+
+                        </li>
+
+                        <li class="icon-content-contact-us-form-container"><i class="fas fa-map-marker-alt"></i>
+
+                            <div class="content-container">
+                                <h3>Office</h3>
+                                <p>Come say hello at our office HQ</p>
+                                <p class="icon-content"><a
+                                        href="https://www.google.com/maps/dir//Indian+Institute+of+Information+Technology+and+Management+Gwalior,+Morena+Link+Rd,+IIITM+Campus,+Gwalior,+Madhya+Pradesh+474015/@26.2494521,78.1719501,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3976c6e5d32a4d53:0xf834069adc0c9b89!2m2!1d78.1741388!2d26.2494521"
+                                        target="_blank">ABV-IIITM Gwalior</a></p>
+                            </div>
+
+                        </li>
+
+                        <li class="icon-content-contact-us-form-container"><i class="fas fa-phone"></i>
+
+                            <div class="content-container">
+                                <h3>Phone</h3>
+                                <p>Monday to Friday 9am to 5pm</p>
+                                <p class="icon-content">6969696969 </p>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <!-- <div class="footer">
+                    <i class="fa fa-facebook-square fa-2x no-colors"   aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x no-colors" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-2x no-colors" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-2x no-colors" aria-hidden="true"></i>
+                </div> -->
+
+                <div id="parent">
+                    <div id="quarter"></div>
+                    <div id="circle"></div>
+                </div>
+
+            </div>
+
+
+            <div id="main">
+
+                <div id="demo">
+
+                    <div class="contact-us-form-heading">
+                        <h2 class="heading">Reach Us</h2>
+                        <p>You can contact us anytime via <span id="keber-email-id">keber@gmail.com</span></p>
+                    </div>
+
+
+                    <div class="contact-us-form-form">
+                        <form action="/contact" id="form" method="post">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required />
+
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" required />
+
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel" name="phone" required />
+
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" required />
+
+                            <label for="message">Message Us</label>
+                            <textarea name="message" id="message" cols="auto" rows="auto"></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
+
+        <!-- Theory: Including the footer Partials using the EJS -->
+        <%- include("includes/footer", {}) %>
+        
+    </div>
+
+    <div class="move-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+</body>
+
+</html>
