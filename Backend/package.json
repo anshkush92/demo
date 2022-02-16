@@ -18,5 +18,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "newsletter.json", 
+      "contact-us.json"
+    ]
   }
 }
