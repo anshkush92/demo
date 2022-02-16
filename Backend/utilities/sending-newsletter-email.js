@@ -1,4 +1,7 @@
 // References (Using Nodemailer to sent Email in Gmail) => https://www.youtube.com/watch?v=Va9UKGs1bwI
+// Errors (Resolve this) => https://support.glitch.com/t/why-isnt-nodemailer-working/17530/12
+// Error (solved) => https://stackoverflow.com/questions/44855839/nodemon-keeps-restarting-server || https://brianchildress.co/prevent-nodemon-from-constantly-restarting/
+
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
@@ -23,14 +26,13 @@ function sent_email(receiver_address) {
         text: "Thank You for subscribing to our Newsletter, now you are one step closer into all the sneak peaks of our product"
     };
 
-
     // Step 3: Sending the Emails 
     transporter.sendMail(mail_options, function (err, data) {
         if (err)
             console.log(`Error occurred when sending emails ${err}`);
         else
             console.log(`Email sent successfully`);
-    })
+    });
 }
 
 // sent_email();
