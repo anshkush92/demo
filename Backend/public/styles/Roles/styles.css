@@ -18,6 +18,11 @@
   z-index: 1;
 }
 
+.roles-container a{
+  color: black;
+  font: inherit;
+}
+
 .admin,
 .student,
 .verifier {
