@@ -1,5 +1,23 @@
 /* Important: This is for the hamburger-cross icon animation */
 
+.side-navigation-bar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.side-navigation-bar-container .heading{
+
+  font: inherit;
+  width: 100%;
+
+  text-align: center;
+  font-weight: bold;
+  
+  font-size: 35px;
+}
+
 /* Theory: To make the <span> element in 3 bars  */
 .side-navigation-bar {
   display: flex;
@@ -13,7 +31,7 @@
   background-color: #e1ebff;
   border-radius: 4px;
   cursor: pointer;
-  display: none;
+  /* display: none; */
 }
 
 /* Theory: To give each <span> element a fixed width and height for better looking hamburger icons */

@@ -95,7 +95,7 @@ aside {
 /* Important: Space for the media query :) */
 
 @media (max-width: 768px) {
-  .side-navigation-bar {
+  .side-navigation-bar-container{
     display: flex;
   }
 

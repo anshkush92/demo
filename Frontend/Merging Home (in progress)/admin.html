@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEBER</title>
+    <title>Admin - Keber</title>
 
     <!-- Important: Linking the font-awesome kit for importing the icons -->
     <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
@@ -23,19 +23,11 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
 
-    <!-- Theory: Linking the CSS files for the Roles Section -->
-    <link rel="stylesheet" href="./styles/Roles/styles.css">
-
-    <!-- Theory: Linking the CSS files for the About - US Section (Image Caraousel) -->
-    <link rel="stylesheet" href="./styles/Image Caruosel/styles.css">
-    <link rel="stylesheet" href="./styles/Image Caruosel/keyframes.css">
-    <link rel="stylesheet" href="./styles/Image Caruosel/responsive-code.css">
+    <!-- Theory: For the admin-login page -->
+    <link rel="stylesheet" href="./styles/admin/styles.css">
 
     <!-- Theory: For the scrolling up button fixed at bottom -->
     <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
-
-    <!-- Theory: Linking the CSS files for the Split Screen Parallax -->
-    <link rel="stylesheet" href="./styles/Split Screen Parallax/styles.css">
 
     <!-- Theory: Linking the CSS files for the Footer -->
     <link rel="stylesheet" href="./styles/Footer/styles.css">
@@ -51,9 +43,6 @@
 
     <!-- Important: Using the JS file for the Scrolling to top -->
     <script src="./scripts/Scroll To Top/app.js" defer></script>
-
-    <!-- Important: Using the JS file for the Image Caruosel Slideshow -->
-    <!-- <script src="./scripts/Image Caruosel/app.js" defer></script> -->
 
     <!-- Important: Using the JS file for knowing the current page -->
     <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
@@ -96,12 +85,17 @@
     <!-- Error --------------------------------------------------------- Hamburger Icon Section ---------------------------------------------------------------- -->
     <!-- Theory: To move the content when clicked on hamburger icon -->
     <div class="animation">
-        <!-- Theory: For making the hamburger-cross animated icon -->
-        <nav class="side-navigation-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-        </nav>
+        <div class="side-navigation-bar-container">
+            <!-- Theory: For making the hamburger-cross animated icon -->
+            <nav class="side-navigation-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+            <nav class="heading">KEBER</nav>
+        </div>
+
 
         <!-- Error ---------------------------------------------------- Horizontal Navigation Bar ---------------------------------------------------------------- -->
         <!-- Important: 2nd Part Horizontal Navigation Bar -->
@@ -130,100 +124,33 @@
             </nav>
         </div>
 
-        <!-- Error -------------------------------------------------------------- Roles ----------------------------------------------------------------------- -->
+        <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
 
-        <div class="roles-container">
+        <div class="admin-login-container">
 
-            <div class="admin">
-
-                <div class="admin-backdrop-filter"></div>
-
-                <div class="image-container">
-                    <img src="./images/Roles/Admin-amico.svg" alt="Admin-image">
-                </div>
-
-                <div class="content-container">
-
-                    <div class="admin-content-heading-div">
-                        <p class="admin-content-heading">Admin</p>
-                    </div>
-
-                    <div class="admin-content-div">
-                        <p class="admin-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
-                            est
-                            laudantium ipsum, amet officiis nostrum laboriosam aut consectetur maxime?</p>
-                    </div>
-
-                </div>
-
-                <div class="admin-button-container">
-                    <button id="admin-sign-in">Sign In</button>
-                </div>
-
+            <div class="admin-login-image-container">
+                <img src="./images/Roles/Admin-amico.svg" alt="Admin">
             </div>
 
-            <div class="student">
+            <div class="admin-login-form">
+                <h2>ADMIN</h2>
+                <form action="/admin-login" method="GET" id="admin-form">
 
-                <div class="student-backdrop-filter"></div>
+                    <label for="admin-email">Email</label>
+                    <input type="email" id="admin-email" name="admin-email" required>
 
-                <div class="image-container">
-                    <img src="./images/Roles/Learning-cuate.svg" alt="Student-image">
-                </div>
+                    <label for="admin-password">Password</label>
+                    <input type="password" name="admin-password" id="admin-password" required>
 
-                <div class="content-container">
-
-                    <div class="student-content-heading-div">
-                        <p class="student-content-heading">Student</p>
-                    </div>
-
-                    <div class="student-content-div">
-                        <p class="student-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente perferendis non
-                            sed
-                            blanditiis recusandae eos illo ipsa maxime odit?
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="student-button-container">
-                    <button class="student-sign-up">Sign Up</button>
-                    <button class="student-sign-in">Sign In</button>
-                </div>
-
-            </div>
-
-            <div class="verifier">
-
-                <div class="verifier-backdrop-filter"></div>
-
-                <div class="image-container">
-                    <img src="./images/Roles/20943760.jpg" alt="Verfiying results">
-                </div>
-
-                <div class="content-container">
-
-                    <div class="verifier-content-heading-div">
-                        <p class="verifier-content-heading">Verifier</p>
-                    </div>
-
-                    <div class="verifier-content-div">
-                        <p class="verifier-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                            quaerat a
-                            perspiciatis quidem mollitia iste amet eaque saepe consectetur vel!</p>
-                    </div>
-
-
-                </div>
-
-                <div class="verifier-button-container">
-                    <button class="verifier-verfiy">Verify</button>
-                </div>
-
+                    <button type="submit">Login</button>
+                </form>
             </div>
 
         </div>
+
+
+
+
 
         <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
 
