@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Keber</title>
+    <title>Student-Sign-In - Keber</title>
 
     <!-- Important: Linking the font-awesome kit for importing the icons -->
     <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
@@ -23,8 +23,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
 
-    <!-- Theory: For the admin-login page -->
-    <link rel="stylesheet" href="./styles/admin/styles.css">
+    <!-- Theory: For the student page -->
+    <link rel="stylesheet" href="./styles/Student/sign-in.css">
 
     <!-- Theory: For the scrolling up button fixed at bottom -->
     <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
@@ -124,32 +124,32 @@
             </nav>
         </div>
 
-        <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
+        <!-- Error -------------------------------------------------------------- Student login --------------------------------------------------------------------->
 
-        <div class="admin-login-container">
-
-            <div class="admin-login-image-container">
-                <img src="./images/Roles/Admin-amico.svg" alt="Admin">
+        <div class="student-container">
+        
+            <div class="student-image-container">
+                <img src="./images/Roles/Learning-cuate.svg" alt="Admin">
             </div>
+        
+            <div class="student-form">
+                <h2>STUDENT</h2>
+                <form action="/student-view-result" method="GET" id="student-form">
+        
+                    <label for="semester-number">Semester</label>
+                    <input type="number" id="semester-number" name="semester-number" min="1" max="10" required>
+        
+                    <label for="roll-number">Roll Number</label>
+                    <input type="text" name="roll-number" id="roll-number" maxlength="11" required>
 
-            <div class="admin-login-form">
-                <h2>ADMIN</h2>
-                <form action="/admin/login" method="GET" id="admin-form">
-
-                    <label for="admin-email">Email</label>
-                    <input type="email" id="admin-email" name="admin-email" required>
-
-                    <label for="admin-password">Password</label>
-                    <input type="password" name="admin-password" id="admin-password" required>
-
-                    <button type="submit">Login</button>
+                    <label for="private-key">Private Key</label>
+                    <input type="file" name="private-key" id="private-key" required accept=".csv, .pdf, .txt">
+        
+                    <button type="submit">View Result</button>
                 </form>
             </div>
-
+        
         </div>
-
-
-
 
 
         <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
@@ -187,11 +187,11 @@
                     </ul>
                 </section>
 
-                <!-- Important: Contains the Roles section (Admin, Student, Verifier) -->
+                <!-- Important: Contains the Roles section (student, Student, Verifier) -->
                 <section>
                     <h3>Roles</h3>
                     <ul>
-                        <li>Admin</li>
+                        <li>student</li>
                         <li>Students</li>
                         <li>Verifier</li>
                     </ul>

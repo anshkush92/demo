@@ -35,6 +35,10 @@
     margin-bottom: 10px;
 }
 
+.admin-login-form #grades-file{
+  padding: 0px;
+}
+
 #admin-form {
   width: 100%;
   min-width: 300px;

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.admin-login-container {
+.verifier-container {
   display: flex;
   width: 70%;
   height: 100vh;
@@ -12,41 +12,48 @@
   align-items: center;
   justify-content: space-around;
 
+  gap: 10px;
   margin: auto;
 }
 
-.admin-login-image-container{
-    max-height: 400px;
-    min-height: 350px;
-    max-width: 400px;
-    min-width: 350px;
-    
-    width: 400px;
+.verifier-image-container {
+  max-height: 400px;
+  min-height: 350px;
+  max-width: 400px;
+  min-width: 350px;
+
+  width: 400px;
 }
 
-.admin-login-form h2{
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 10px;
+img {
+  /* height: 100px; */
+  width: 350px;
+  object-fit: contain;
 }
 
-.admin-login-form #grades-file{
+.verifier-form h2 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.verifier-form #grades-file {
   padding: 0px;
 }
 
-#admin-form {
+#verifier-form {
   width: 100%;
   min-width: 300px;
   display: flex;
   flex-direction: column;
 }
 
-#admin-form label {
+#verifier-form label {
   font-weight: bolder;
   margin-bottom: 5px;
 }
 
-#admin-form input {
+#verifier-form input {
   border-radius: 4px;
   height: 35px;
   padding: 5px;
@@ -55,7 +62,7 @@
   margin-bottom: 10px;
 }
 
-#admin-form button {
+#verifier-form button {
   font-size: 100%;
   width: 100%;
   height: 45px;
@@ -69,8 +76,8 @@
   margin-top: 10px;
 }
 
-@media(max-width: 768px) {
-    .admin-login-image-container{
-        display: none;
-    }
+@media (max-width: 768px) {
+  .verifier-image-container {
+    display: none;
+  }
 }

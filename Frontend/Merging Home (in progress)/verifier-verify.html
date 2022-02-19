@@ -23,8 +23,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
 
-    <!-- Theory: For the admin-login page -->
-    <link rel="stylesheet" href="./styles/admin/styles.css">
+    <!-- Theory: For the verifier page -->
+    <link rel="stylesheet" href="./styles/verifier/styles.css">
 
     <!-- Theory: For the scrolling up button fixed at bottom -->
     <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
@@ -126,31 +126,30 @@
 
         <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
 
-        <div class="admin-login-container">
+        <div class="verifier-container">
 
-            <div class="admin-login-image-container">
-                <img src="./images/Roles/Admin-amico.svg" alt="Admin">
+            <div class="verifier-image-container">
+                <img src="./images/Roles/Data_security_05-removebg-preview.png" alt="Verifier">
             </div>
 
-            <div class="admin-login-form">
-                <h2>ADMIN</h2>
-                <form action="/admin/login" method="GET" id="admin-form">
+            <div class="verifier-form">
+                <h2>VERIFIER</h2>
+                <form action="/verifier-upload" method="POST" id="verifier-form" enctype="multipart/form-data">
 
-                    <label for="admin-email">Email</label>
-                    <input type="email" id="admin-email" name="admin-email" required>
+                    <label for="semester-number">Semester</label>
+                    <input type="number" id="semester-number" name="semester-number" min="1" max="10" required>
 
-                    <label for="admin-password">Password</label>
-                    <input type="password" name="admin-password" id="admin-password" required>
+                    <label for="roll-number">Roll Number</label>
+                    <input type="text" name="roll-number" id="roll-number" maxlength="11" required>
 
-                    <button type="submit">Login</button>
+                    <label for="grades-file">Grades</label>
+                    <input type="file" name="grades-file" id="grades-file" required accept=".csv, .pdf, .txt">
+
+                    <button type="submit">Verify</button>
                 </form>
             </div>
 
         </div>
-
-
-
-
 
         <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
 
