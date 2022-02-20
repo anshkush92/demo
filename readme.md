@@ -16,12 +16,12 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -34,7 +34,7 @@
 
   <p align="center">
     Asymetric Key based Result Viewing/Verifying Sytem
-    <br />
+    <!-- <br />
     <a href="https://github.com/anshkush92college/demo"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -42,35 +42,9 @@
     ·
     <a href="https://github.com/anshkush92college/demo/issues">Report Bug</a>
     ·
-    <a href="https://github.com/anshkush92college/demo/issues">Request Feature</a>
+    <a href="https://github.com/anshkush92college/demo/issues">Request Feature</a> -->
   </p>
 </div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <!-- <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li> -->
-    <li><a href="#license">License</a></li>
-    <!-- <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li> -->
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
@@ -97,28 +71,46 @@ KEBER allows you to have different roles such as Admin, Student or Verifier
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `anshkush92college`, `demo`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `KEBER`, `Asymetric Key based Result Viewing/Verifying Sytem` -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
+## Technologies Used 
 ### FrontEnd
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - Forms
 - [EJS](https://ejs.co/)
+  - Template Engine for reusing HTML
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - Responsive Design 
+  - Grids, Flexbox
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  - Everything :) 
 - [Scroll Magic](https://scrollmagic.io/)
+  - Split Screen Parallax
 - [FontAwesome](https://fontawesome.com/)
+  - Icons 
 
 ### BackEnd
 
 - [NodeJS](https://nodejs.dev/)
+  - Creating own server side code
 - [Express](https://expressjs.com/)
+  - Enhancing NodeJS
 - [Multer](https://www.npmjs.com/package/multer)
+  - File Upload / Serving 
 - [Nodemailer](https://www.npmjs.com/package/nodemailer)
+  - Sending Emails
 - [MySQL](https://www.npmjs.com/package/mysql2)
+  - Storing the data
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
+<br>
+
+## Thoughts behind the project
+- After the failed attempt to get started with Web - Devlopment during Web Month, we decided to give it another try and add Web Development as anothe r skill in our skillsket 
 
 <!-- GETTING STARTED -->
+<br>
 
 ## Getting Started
 
@@ -176,48 +168,17 @@ The softwares that must be present on users PC to efficiently run this project
    localhost:3000/
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+  <br>
 
-<!-- USAGE EXAMPLES
-## Usage
+## What's Next 
+- Implement the Authentication and Authorization
+- Use the Concept of Asymetric Key to view and verify the result
+- 2 Factor Authentication for Students 
+- Prevent SQL Injection as no Authentication and Authorization is implemented yet
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-<!-- ## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/anshkush92college/demo/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-<!-- CONTRIBUTING -->
-<!-- ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-<!-- LICENSE -->
+<br>
 
 ## Team Members
 
@@ -225,28 +186,7 @@ Don't forget to give the project a star! Thanks again!
 - [Devanshu Patidar](https://github.com/deadmanbmk6) 2020IMT-026
 - [Prakhar Kumar Sinha](https://github.com/PkSinha7) 2020IMT-070
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTACT -->
-<!-- ## Contributors
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/anshkush92college/demo](https://github.com/anshkush92college/demo)
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-<!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/anshkush92college/demo.svg?style=for-the-badge
 [contributors-url]: https://github.com/anshkush92college/demo/graphs/contributors
