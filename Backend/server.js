@@ -13,6 +13,8 @@ const path = require("path");
 const express = require("express");
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 // Test ---------------------------------------------------------- Our Own Custom Routes (Imported) --------------------------------------
 const index_about_faq_routes = require("./routes/index_about_faq");
 const roles_signup_sign_routes = require("./routes/roles_signup_singin");
@@ -47,7 +49,7 @@ app.use(function(error, req, res, next) {
 })
 
 // Test ---------------------------------------------------------- Server starting -------------------------------------------------------
-app.listen(3000, function (req, res) {
+app.listen(port, function (req, res) {
     console.log("Server is listening on the port 3000");
     console.log("Access the server by typing localhost:3000")
 })

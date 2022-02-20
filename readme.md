@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -17,14 +15,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -48,8 +45,6 @@
     <a href="https://github.com/anshkush92college/demo/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,9 +72,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://pedantic-jang-7a875b.netlify.app/index.html)
@@ -87,70 +81,102 @@
 A website for Result Viewing / Verifying
 <br/>
 KEBER allows you to have different roles such as Admin, Student or Verifier
-<br/>
+
+### Admin
+
+- Uploads results of the students
+
+### Student
+
+- View/Download the result
+
+### Verifier
+
+- Verify the authencity of the result
+  <br/>
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `anshkush92college`, `demo`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `KEBER`, `Asymetric Key based Result Viewing/Verifying Sytem` -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### FrontEnd
 
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [EJS](https://ejs.co/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Scroll Magic](https://scrollmagic.io/)
+- [FontAwesome](https://fontawesome.com/)
 
-### Built With
+### BackEnd
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [Scroll Magic](https://scrollmagic.io/)
-* [FontAwesome](https://fontawesome.com/)
-* [NodeJS](https://nodejs.dev/)
-* [Express](https://expressjs.com/)
-* [EJS](https://ejs.co/)
+- [NodeJS](https://nodejs.dev/)
+- [Express](https://expressjs.com/)
+- [Multer](https://www.npmjs.com/package/multer)
+- [Nodemailer](https://www.npmjs.com/package/nodemailer)
+- [MySQL](https://www.npmjs.com/package/mysql2)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
-## Getting Started
 
+## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
 The softwares that must be present on users PC to efficiently run this project
-* NodeJS
+
+- NodeJS
+
   ```sh
   https://nodejs.dev/download
   ```
 
+- MySQL
+  ```sh
+  https://dev.mysql.com/downloads/mysql/
+  ```
+
 ### Installation
 
-1. Go [here](https://github.com/anshkush92college/demo) and copy the URL 
-    <br>
-    <a href="https://github.com/anshkush92college/demo">
-    <img src="https://res.cloudinary.com/dicbnntfh/image/upload/v1644669841/2022-02-12-18-11-19_1_hlnrmz.gif" alt="How and from where copy the URL">
-  </a>
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/anshkush92college/demo.git
    ```
-   <a href="https://github.com/anshkush92college/demo">
-    <img src="https://res.cloudinary.com/dicbnntfh/image/upload/v1644670033/git_clone_mdpjkl.png" alt="How to clone the repository"> </a>
-    <br>
+2. Create the database for storing the entered data
 
-3. You will see the folder name demo created where you cloned the project
-    <a href="https://github.com/anshkush92college/demo">
-    <img src="https://res.cloudinary.com/dicbnntfh/image/upload/v1644670219/done_utjusq.png" alt="How to clone the repository"> </a>
+3. Navigate to `demo/Backend` in your cloned folder then in there create an `.env` file
 
-4. Install NPM packages
+   ```sh
+    email="sender's_email"
+    password="sender's_password"
+    mysql_password="your_my_sql_password"
+   ```
+
+   You may run into [this](https://bit.ly/nodemailer-gmail-problem) error when sending emails via nodemailer
+
+4. After creating the `.env` file with all configuration, now open the terminal and in that navigate to `demo/Backend`
+
+   ```sh
+   cd "path/demo/Backend"
+   ```
+
+5. After navigating to `demo/Backend` on terminal, now run
    ```sh
    npm install
    ```
+   to install all dependencies and then run 
+   ```sh
+   npm start
+   ```
+   to start the server and then on your browser open
+   ```sh
+   localhost:3000/
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES
 ## Usage
@@ -175,8 +201,6 @@ See the [open issues](https://github.com/anshkush92college/demo/issues) for a fu
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
 
@@ -193,16 +217,15 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- LICENSE -->
-## License
 
-Distributed under the MIT License.
+## Team Members
+
+- [Ansh Singh](https://github.com/anshkush92college) 2020IMT-013
+- [Devanshu Patidar](https://github.com/deadmanbmk6) 2020IMT-026
+- [Prakhar Kumar Sinha](https://github.com/PkSinha7) 2020IMT-070
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 <!-- ## Contributors
@@ -213,8 +236,6 @@ Project Link: [https://github.com/anshkush92college/demo](https://github.com/ans
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- ACKNOWLEDGMENTS -->
 <!-- ## Acknowledgments
 
@@ -224,10 +245,9 @@ Project Link: [https://github.com/anshkush92college/demo](https://github.com/ans
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/anshkush92college/demo.svg?style=for-the-badge
 [contributors-url]: https://github.com/anshkush92college/demo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/anshkush92college/demo.svg?style=for-the-badge
@@ -240,4 +260,4 @@ Project Link: [https://github.com/anshkush92college/demo](https://github.com/ans
 [license-url]: https://github.com/anshkush92college/demo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: https://res.cloudinary.com/dicbnntfh/image/upload/v1644668062/what_is_keber_nu6jjy.png
+[product-screenshot]: https://res.cloudinary.com/dicbnntfh/image/upload/v1645355300/1_qcivvo.png
