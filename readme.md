@@ -104,13 +104,9 @@ KEBER allows you to have different roles such as Admin, Student or Verifier
   - Storing the data
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
-<br>
 
 ## Thoughts behind the project
 - After the failed attempt to get started with Web - Devlopment during Web Month, we decided to give it another try and add Web Development as anothe r skill in our skillsket 
-
-<!-- GETTING STARTED -->
-<br>
 
 ## Getting Started
 
