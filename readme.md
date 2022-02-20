@@ -50,7 +50,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://pedantic-jang-7a875b.netlify.app/index.html)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/anshkush92college/demo)
 
 A website for Result Viewing / Verifying
 <br/>
