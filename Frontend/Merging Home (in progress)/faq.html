@@ -1,0 +1,303 @@
+<!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Keber</title>
+
+    <!-- Important: Linking the font-awesome kit for importing the icons -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+
+    <!-- Important: Importaing the fonts from the Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Test: Linking the ScrollMagic CDN File for using the Scroll Magic Plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
+
+    <!-- Theory: For the verifier page -->
+    <link rel="stylesheet" href="./styles/verifier/styles.css">
+
+    <!-- Theory: For the scrolling up button fixed at bottom -->
+    <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Footer -->
+    <link rel="stylesheet" href="./styles/Footer/styles.css">
+    <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
+    <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+
+    <!-- Theory: Linking the CSS files for navigation bar -->
+    <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar-content.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/backdrop-filter.css">
+
+
+    <!-- Important: Using the JS file for the Scrolling to top -->
+    <script src="./scripts/Scroll To Top/app.js" defer></script>
+
+    <!-- Important: Using the JS file for knowing the current page -->
+    <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/current_page_tell_side_navigation_bar.js" defer></script> -->
+
+    <!-- Important: Using the JS file for the Split screene Parallax -->
+    <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
+
+    <!-- Important: As we are using script in <head> so it is important to makke it defer -->
+    <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+    <!-- Important: To make the navbar change the color -->
+    <script src="./scripts/Navigation Bar/change_color_navbar.js" defer></script>
+
+    <!-- Important: AJax request for the Newsletter -->
+    <script src="./scripts/Footer/newsletter.js" defer></script>
+
+    <!-- Theory: Linking the CSS, JS files -->
+    <link rel="stylesheet" href="./styles/faq/styles.css">
+    <!-- Important: Don't forget to use "defer" when using <script> in <head> -->
+    <script src="./scripts/faq/app.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Error ----------------------------------------------------- Side Navigation Bar Section ------------------------------------------------------------ -->
+    <div id="backdrop-filter"></div>
+
+    <!-- Important: 1st part Navigation Bar (Vertical (Side Navigation bar)) -->
+    <!-- Theory: For making the side-navigation-bar overlay -->
+    <aside>
+        <div class="side-navigation-bar-content">
+            <h2>KEBER</h2>
+            <ul>
+                <li class="icon-content"><i class="fas fa-home"></i> <a href="./index.html">Home</a> </li>
+                <li class="icon-content"><i class="fas fa-user"></i> About Us</li>
+                <li class="icon-content clicked"><i class="fas fa-users-cog"></i> <a href="./roles.html">Roles</a></li>
+                <li class="icon-content"><i class="fas fa-question"></i> FAQs</li>
+                <li class="icon-content"><i class="fas fa-phone-alt"></i> <a href="./contact-us-form.html">Contact
+                        US</a></li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <!-- Error --------------------------------------------------------- Hamburger Icon Section ---------------------------------------------------------------- -->
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
+        <div class="side-navigation-bar-container">
+            <!-- Theory: For making the hamburger-cross animated icon -->
+            <nav class="side-navigation-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+            <nav class="heading">KEBER</nav>
+        </div>
+
+
+        <!-- Error ---------------------------------------------------- Horizontal Navigation Bar ---------------------------------------------------------------- -->
+        <!-- Important: 2nd Part Horizontal Navigation Bar -->
+        <!-- Theory: For making the whole navigation bar -->
+        <div class="navigation-bars-container">
+
+            <!-- Theory: For making the top navigation bar -->
+            <nav class="navigation-bar">
+                <div class="logo"> <a href="./index.html">KEBER</a></div>
+
+                <div class="nav-content">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>About Us</li>
+                        <li class="current-page"><a href="./roles.html">Roles</a></li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+                <div class="contact-us-container">
+                    <div class="get-started"><a href="./roles.html">Get Started <span
+                                id="get-started-right-arrow">&#8594;</span></a>
+                    </div>
+                    <div class="contact-us"><a href="./contact-us-form.html">Contact US</a></div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
+
+        <!-- Todo: Create a FAQ based on => https://dribbble.com/shots/14910012-Daily-UI-FAQ -->
+        <div class="faq-container">
+            <!-- <h1>FAQs</h1> -->
+        
+            <div class="svg-faq-container-content">
+                <div class="svg">
+                    <img src="./images/faq/FAQs-pana-cropped.svg" alt="FAQ section">
+                    <!-- hi -->
+                </div>
+        
+                <div class="content">
+                    <!-- Theory: Unordered questions for the FAQs -->
+                    <h1>FAQs</h1>
+                    <ul>
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">Can only admin upload the results ? 
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Yes, only admin can upload the result</div>
+                        </li>
+
+                        <li>
+                        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Can we create an account for the admin ?
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+                        
+                            <div class="answer">No you cannot, we have some predefined admins</div>
+                        </li>
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Do we need to create a account before viewing our result ? 
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Yes you need to create your account to view/ download your result</div>
+                        </li>
+
+                        
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    What all things are required to verify the authencity of result ? 
+                                </p>
+        
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">To verify the result, you need student's roll number, semester number and the result itself</div>
+                        </li>
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Have more questions for us ?
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Visit the contact us for more queries 
+                            </div>
+                        </li>
+                    </ul>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
+
+        <!-- Testing: Commenting out for testing purpose for mobile view -->
+        <!-- Important: 4th part Footer (for now) -->
+        <div class="footer-container">
+            <h2>Free trial of 1 month</h2>
+
+            <footer>
+
+                <!-- Important: Contains sign up to newsletter -->
+                <section>
+                    <h3>KEBER</h3>
+
+                    <!--Todo: Should contain images about different social media -->
+                    <ul class="social-media-icons-container">
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the services of the website -->
+                <section>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Privacy of Information</li>
+                        <li>Marks Integrity</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the Roles section (Admin, Student, Verifier) -->
+                <section>
+                    <h3>Roles</h3>
+                    <ul>
+                        <li>Admin</li>
+                        <li>Students</li>
+                        <li>Verifier</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the informatio of how to use + about us -->
+                <section>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>How to use</li>
+                    </ul>
+                </section>
+
+                <!-- Important: Contains the form for the subscription -->
+                <section>
+                    <h3>Don't Miss Out</h3>
+                    <p>Notified first for our products samples, coupons and latest news</p>
+                    <form action="">
+                        <div class="footer-newsletter-form">
+                            <input type="email" name="useremail" id="user-email" placeholder="Enter Email Address">
+                            <button type="submit" id="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+
+            </footer>
+
+            <!-- Important: Container which stores the copyright and back to top section -->
+            <div class="container">
+                <div>© 2022 KEBER</div>
+                <button> <a href="#">Back to top &#94;</a> </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="move-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+</body>
+
+</html>

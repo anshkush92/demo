@@ -1,0 +1,120 @@
+<!-- References => https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- References => https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<!-- References (Scrolling) => https://javascript.info/onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Keber</title>
+
+    <!-- Important: Linking the font-awesome kit for importing the icons -->
+    <script src="https://kit.fontawesome.com/2243876fca.js" crossorigin="anonymous"></script>
+
+    <!-- Important: Importaing the fonts from the Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Test: Linking the ScrollMagic CDN File for using the Scroll Magic Plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" defer></script>
+
+    <!-- Theory: For the admin-login page -->
+    <link rel="stylesheet" href="./styles/admin/styles.css">
+
+    <!-- Theory: For the scrolling up button fixed at bottom -->
+    <link rel="stylesheet" href="./styles/Scroll To Top/styles.css">
+
+    <!-- Theory: Linking the CSS files for the Footer -->
+    <link rel="stylesheet" href="./styles/Footer/styles.css">
+    <link rel="stylesheet" href="./styles/Footer/social-media-icons.css">
+    <link rel="stylesheet" href="./styles/Footer/responsive-code.css">
+
+    <!-- Theory: Linking the CSS files for navigation bar -->
+    <link rel="stylesheet" href="./styles/Navigation Bar/navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/side-navigation-bar-content.css">
+    <link rel="stylesheet" href="./styles/Navigation Bar/backdrop-filter.css">
+
+
+    <!-- Important: Using the JS file for the Scrolling to top -->
+    <script src="./scripts/Scroll To Top/app.js" defer></script>
+
+    <!-- Important: Using the JS file for knowing the current page -->
+    <script src="./scripts/Navigation Bar/current_page_tell_horizontal_navigation_bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/current_page_tell_side_navigation_bar.js" defer></script> -->
+
+    <!-- Important: Using the JS file for the Split screene Parallax -->
+    <!-- <script src="./scripts/Split Screen Parallax/app.js" defer></script> -->
+
+    <!-- Important: As we are using script in <head> so it is important to makke it defer -->
+    <script src="./scripts/Navigation Bar/toggle-hamburger-icon-bring-side-nav-bar.js" defer></script>
+    <!-- <script src="./scripts/Navigation Bar/hide-show-horizontal-navigation-bar.js" defer></script> -->
+
+    <!-- Important: To make the navbar change the color -->
+    <script src="./scripts/Navigation Bar/change_color_navbar.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Error ----------------------------------------------------- Side Navigation Bar Section ------------------------------------------------------------ -->
+    <div id="backdrop-filter"></div>
+
+    <!-- Theory: Including the side-navigation Partials using the EJS -->
+    <%- include("includes/side-navigation-bar", {}) %>
+
+    <!-- Error --------------------------------------------------------- Hamburger Icon Section ---------------------------------------------------------------- -->
+    <!-- Theory: To move the content when clicked on hamburger icon -->
+    <div class="animation">
+        
+        <!-- Theory: Including the side-navigation-bar-header Partials using the EJS -->
+        <%- include("includes/side-navigation-bar-header", {}) %>
+
+        <!-- Error ---------------------------------------------------- Horizontal Navigation Bar ---------------------------------------------------------------- -->
+        <!-- Theory: Including the header Partials using the EJS -->
+        <%- include("includes/header", {}) %>
+
+        <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
+
+        <div class="admin-login-container">
+
+            <div class="admin-login-image-container">
+                <img src="./images/Roles/Admin-amico.svg" alt="Admin">
+            </div>
+
+            <div class="admin-login-form">
+                <h2>ADMIN</h2>
+                <form action="/admin-upload" method="POST" id="admin-form" enctype="multipart/form-data">
+
+                    <label for="semester-number">Semester</label>
+                    <input type="number" id="admin-email" name="admin-email" min="1" max="10" required>
+
+                    <label for="roll-number">Roll Number</label>
+                    <input type="text" name="admin-password" id="admin-password" maxlength="11" required>
+                    
+                    <label for="grades-file">Grades</label>
+                    <input type="file" name="grades-file" id="grades-file" required accept=".csv, .pdf, .txt">
+
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->
+
+        <!-- Theory: Including the footer Partials using the EJS -->
+        <%- include("includes/footer", {}) %>
+    </div>
+
+    <div class="move-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+</body>
+
+</html>

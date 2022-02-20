@@ -13,7 +13,9 @@ function change_color(event) {
 
     if (height_scrolled >= "80") {
         navigation_bar.style.backgroundColor = "white";
+        move_to_top_button.style.display = "flex";
     } else {
         navigation_bar.style.backgroundColor = "";
+        move_to_top_button.style.display = "none";
     }
 }
