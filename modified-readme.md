@@ -5,12 +5,15 @@ Prakhar Sinha\
 Brief description of the project-
 
 Main features implemented in the project  
-Tech stack and concepts used
-HTML
+Tech stack and concepts used\
+### HTML
 * Forms
-* links
+### CSS 
+* Responsive Design
+* Flexbox
+* Bootstrap
 
-CSS , Javascript
+### Javascript
 Thought behind the project
 Hosted link, if hosted
 Instructions for local setup
