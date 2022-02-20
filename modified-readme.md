@@ -14,7 +14,11 @@ Tech stack and concepts used\
 * Bootstrap
 
 ### Javascript
-Thought behind the project
+* Node.js
+
+### Database
+
+##Thought behind the project
 Hosted link, if hosted
 Instructions for local setup
 A sample README.md can be found here
