@@ -1,0 +1,60 @@
+#fhi {
+  max-width: 400px;
+}
+
+/* Centering Button */
+#cb {
+  text-align: center;
+}
+
+/* Making Responsive using flexbox */
+#fbd {
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+/* Setting media query */
+@media (min-width: 600px) {
+  #fbb {
+    width: 50%;
+  }
+}
+/* Making punchline Block element */
+#punchline {
+  display: block;
+}
+
+/* Centering punchline and 500 */
+#punchline,
+#fhv {
+  text-align: center;
+}
+
+/* centering flex items button and para */
+#pd,
+#cb {
+  align-self: center;
+}
+
+/* Setting font */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* color for button  and the font inside */
+#btn {
+  background-color: #3b2a93;
+  color: aliceblue;
+  border-radius: 0.2cm;
+}
+/* increasing font size  of 500 and setting its color */
+#fhv {
+  transform: scale(1.75);
+  color: #3b2a93;
+}

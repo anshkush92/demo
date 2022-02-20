@@ -1,45 +1,61 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins";
-}
-
-body{
-    background-color: rgb(251, 251, 255);
-}
-
-.image-content-container{
+#fhi {
+    max-width: 400px;
+  }
+  
+  /* Centering Button */
+  #cb {
+    text-align: center;
+  }
+  
+  /* Making Responsive using flexbox */
+  #fbd {
+    justify-content: space-around;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 50px; */
     width: 100%;
-    margin: auto;
-}
-
-.content-container .content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
-
-.content-container .content p#heading{
-    font-size: 150px;
-}
-
-.content-container .content p{
-    font-size: 37px;
-    /* margin-top: -65px; */
-    /* padding: 0px 5px 0px 25px; */
-}
-
-.image-container{
-    align-self: flex-end;
-    height: 50%;
-    width: 50%;
     max-width: 800px;
-    margin-top: -200px;
-}
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  
+  /* Setting media query */
+  @media (min-width: 600px) {
+    #fbb {
+      width: 50%;
+    }
+  }
+  /* Making punchline Block element */
+  #punchline {
+    display: block;
+  }
+  
+  /* Centering punchline and 500 */
+  #punchline,
+  #fhv {
+    text-align: center;
+  }
+  
+  /* centering flex items button and para */
+  #pd,
+  #cb {
+    align-self: center;
+  }
+  
+  /* Setting font */
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* color for button  and the font inside */
+  #btn {
+    background-color: #3b2a93;
+    color: aliceblue;
+    border-radius: 0.2cm;
+  }
+  /* increasing font size  of 500 and setting its color */
+  #fhv {
+    transform: scale(1.75);
+    color: #3b2a93;
+  }
+  
