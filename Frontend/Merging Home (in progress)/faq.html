@@ -61,6 +61,11 @@
     <!-- Important: AJax request for the Newsletter -->
     <script src="./scripts/Footer/newsletter.js" defer></script>
 
+    <!-- Theory: Linking the CSS, JS files -->
+    <link rel="stylesheet" href="./styles/faq/styles.css">
+    <!-- Important: Don't forget to use "defer" when using <script> in <head> -->
+    <script src="./scripts/faq/app.js" defer></script>
+
 </head>
 
 <body>
@@ -129,29 +134,88 @@
 
         <!-- Error -------------------------------------------------------------- Admin login --------------------------------------------------------------------->
 
-        <div class="verifier-container">
+        <!-- Todo: Create a FAQ based on => https://dribbble.com/shots/14910012-Daily-UI-FAQ -->
+        <div class="faq-container">
+            <!-- <h1>FAQs</h1> -->
+        
+            <div class="svg-faq-container-content">
+                <div class="svg">
+                    <img src="./images/faq/FAQs-pana-cropped.svg" alt="FAQ section">
+                    <!-- hi -->
+                </div>
+        
+                <div class="content">
+                    <!-- Theory: Unordered questions for the FAQs -->
+                    <h1>FAQs</h1>
+                    <ul>
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">Can only admin upload the results ? 
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Yes, only admin can upload the result</div>
+                        </li>
 
-            <div class="verifier-image-container">
-                <img src="./images/Roles/Data_security_05-removebg-preview.png" alt="Verifier">
+                        <li>
+                        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Can we create an account for the admin ?
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+                        
+                            <div class="answer">No you cannot, we have some predefined admins</div>
+                        </li>
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Do we need to create a account before viewing our result ? 
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Yes you need to create your account to view/ download your result</div>
+                        </li>
+
+                        
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    What all things are required to verify the authencity of result ? 
+                                </p>
+        
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">To verify the result, you need student's roll number, semester number and the result itself</div>
+                        </li>
+        
+                        <li>
+        
+                            <div class="question-button-toggle">
+                                <p class="question">
+                                    Have more questions for us ?
+                                </p>
+                                <button class="button">+</button>
+                            </div>
+        
+                            <div class="answer">Visit the contact us for more queries 
+                            </div>
+                        </li>
+                    </ul>
+        
+                </div>
+        
             </div>
-
-            <div class="verifier-form">
-                <h2>VERIFIER</h2>
-                <form action="/verifier-upload" method="POST" id="verifier-form" enctype="multipart/form-data">
-
-                    <label for="semester-number">Semester</label>
-                    <input type="number" id="semester-number" name="semester-number" min="1" max="10" required>
-
-                    <label for="roll-number">Roll Number</label>
-                    <input type="text" name="roll-number" id="roll-number" maxlength="11" required>
-
-                    <label for="grades-file">Grades</label>
-                    <input type="file" name="grades-file" id="grades-file" required accept=".csv, .pdf, .txt">
-
-                    <button type="submit">Verify</button>
-                </form>
-            </div>
-
+        
         </div>
 
         <!-- Error -------------------------------------------------------------- Footer Section ------------------------------------------------------------------->

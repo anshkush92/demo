@@ -21,6 +21,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: none;
 }
 
 .move-to-top .fas:hover {
