@@ -50,7 +50,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/anshkush92college/demo)
+[![Product Name Screen Shot][product-screenshot]](https://keber-as-dp-pk.herokuapp.com/)
 
 A website for Result Viewing / Verifying
 <br/>
@@ -135,16 +135,66 @@ The softwares that must be present on users PC to efficiently run this project
    ```sh
    git clone https://github.com/anshkush92college/demo.git
    ```
-2. Create the database for storing the entered data
+2. Go to [Elephant SQL](https://customer.elephantsql.com/instance/create?plan=turtle) and create your database there
+    ```sh
+    CREATE TABLE newsletter 
+    (
+        emails VARCHAR(255) PRIMARY KEY
+    );
+
+    CREATE TABLE contact_us 
+    (
+        name varchar(255), 
+        email varchar(255), 
+        phone_number varchar(11), 
+        subject varchar(1000), 
+        message varchar(2000)
+    );
+
+    CREATE TABLE admin_login (
+        email varchar(255) PRIMARY KEY,
+        password varchar(255)
+    );
+
+    CREATE TABLE admin_upload
+    (
+        semester_number int, 
+        roll_number varchar(11), 
+        file_path varchar(2000),
+        PRIMARY KEY (semester_number, roll_number)
+    );
+
+    CREATE TABLE student_sign_up 
+    (
+      email varchar(255), 
+      roll_number varchar(11),
+      PRIMARY KEY (email, roll_number)
+    );
+
+    CREATE TABLE student_view_result 
+    (
+      semester_number int, 
+      roll_number varchar(11), 
+      file_path varchar(2000),
+      PRIMARY KEY (semester_number, roll_number)
+    );
+
+    CREATE TABLE verifier_verify_result 
+    (
+      semester_number int, 
+      roll_number varchar(11),
+      file_path varchar(2000),
+      PRIMARY KEY (semester_number, roll_number)
+    );
+    ```
 
 3. Navigate to `demo/Backend` in your cloned folder then in there create an `.env` file
 
    ```sh
     email="sender's_email"
     password="sender's_password"
-    mysql_password="your_my_sql_password"
+    database_url="your_elephant_sql_URL"
    ```
-
    You may run into [this](https://bit.ly/nodemailer-gmail-problem) error when sending emails via nodemailer
 
 4. After creating the `.env` file with all configuration, now open the terminal and in that navigate to `demo/Backend`
@@ -169,10 +219,10 @@ The softwares that must be present on users PC to efficiently run this project
   <br>
 
 ## What's Next 
-- Implement the Authentication and Authorization
-- Use the Concept of Asymetric Key to view and verify the result
-- 2 Factor Authentication for Students 
-- Prevent SQL Injection as no Authentication and Authorization is implemented yet
+- [ ] Implement the Authentication and Authorization
+- [ ] Use the Concept of Asymetric Key to view and verify the result
+- [ ] 2 Factor Authentication for Students 
+- [ ] Prevent SQL Injection as no Authentication and Authorization is implemented yet
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
